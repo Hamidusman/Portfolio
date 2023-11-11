@@ -69,6 +69,10 @@ a{
     margin-bottom: 30px
 }
 
+.hero-img{
+    width: 570px
+}
+
 button{
     padding: 6px 19px;
     border-radius: 30px;
