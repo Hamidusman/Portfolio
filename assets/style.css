@@ -2,7 +2,8 @@ body, section{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    color: white
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 
 }
 
@@ -11,23 +12,36 @@ section{
 }
 :root{
     --color-primary: rgb(0, 0, 128);
-    --color-secondary: #e1ad01;
+    --color-secondary: #d0a003;
     --color-tertiary: rgb(15, 15, 68);
 }
 
 .navbar{
-    height: 40px;
+    height: 60px;
     display: flex;
-    background-color: rgb(98, 98, 98);
-    justify-content: right;
+    background-color: var(--color-secondary);
+    justify-content: space-between;
     align-items: center;
 
 }
 
-a{
-    margin: 0 50px;
+.navbar i{
+    margin-left:30px
+}
+
+.c{
+    margin-right: 20px;
+}
+.navs a{
+    margin: 0 30px; 
     text-decoration:dashed;
-    color: unset
+    color: unset;
+    font-size: 25px;
+}
+
+.navs a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .navs{
@@ -52,7 +66,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace
 }
 .intro-text{
     
@@ -60,7 +73,6 @@ a{
 .pretext{
     font-size: 25px;
     margin-bottom: -45px; 
-    font-family: 'Courier New', Courier, monospace
 }
 .main-text{
     font-size: 45px;
@@ -74,6 +86,20 @@ a{
 
 .hero-img{
     width: 520px
+}
+.hire{
+    position: relative;
+    padding: 13px 30px;
+    background: var(--color-primary);
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 10px;
+    color: white
+}
+
+.hire:hover{
+    background-color: var(--color-secondary);
+    box-shadow:  2px -2px 5px #dfb425;
 }
 
 button{
@@ -89,7 +115,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 65%;
+    height: 70%;
     background-color: var(--color-tertiary);
 } 
 .about-text{
@@ -103,6 +129,14 @@ button{
 p
 .story{
     font-size: 26px; 
+}
+.story-container{
+    display:flex;
+    justify-content: space-around   ;
+}
+
+.dokeibi{
+    width: 280px
 }
 .skills{
     width: 100%;
@@ -136,7 +170,7 @@ p
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0
+    margin: 0 15px
     
 
 }
@@ -172,14 +206,20 @@ p
     align-items: center;
     margin-top: 35px
 }
+.lang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px
+}
 .skill-svg{
-    width: 70px; 
+    width: 45px; 
     margin: 0 20px;
 }
 
 .reviews{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: var(--color-tertiary);
 }
 
@@ -189,6 +229,7 @@ p
     justify-content: center;
     margin-top: 130px;
     width: 100%;
+    margin-bottom: 35px;
 
 }
 
@@ -235,7 +276,7 @@ p
 
 
 .contacts{
-    height: 60vh;
+    height: 80vh;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -250,7 +291,7 @@ form {
 }
 
 form input, textarea{
-    width: 250px;
+    width: 320px;
     margin-bottom: 10px;
     border-radius: 5px
 }
@@ -260,7 +301,8 @@ form input{
 }
 
 textarea{
-    height: 120px
+    height: 120px;
+    background-color: black;
 }
 
 form button{
@@ -282,10 +324,19 @@ form button:hover{
     margin-bottom: 15px;
 }
 
+li{
+    list-style-type: none;
+}
+
 i{
     padding: 13px;
 } 
 .handles{
     display: flex;
     justify-content: center;
+}
+
+.handle-logo{
+    width: 30px;
+    margin: 0 12px;
 }
