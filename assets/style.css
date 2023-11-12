@@ -21,7 +21,7 @@ section{
     background-color: rgb(98, 98, 98);
     justify-content: right;
     align-items: center;
-    
+
 }
 
 a{
@@ -136,6 +136,7 @@ p
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0
     
 
 }
@@ -162,7 +163,7 @@ p
 }
 .card-des{
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .techstacks{
@@ -236,6 +237,9 @@ p
 .contacts{
     height: 60vh;
     background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
  
 form {
@@ -257,4 +261,31 @@ form input{
 
 textarea{
     height: 120px
+}
+
+form button{
+    padding: 9px 22px;
+    border-radius: 5px; 
+    font-size: 17px;
+    border-color: unset;
+
+}
+
+form button:hover{
+    background: var(--color-secondary);
+    box-shadow: 0px 0px 10px var(--color-secondary),0px 0px 30px var(--color-secondary);
+    transition: .8s;
+}
+
+.comm-list{
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+i{
+    padding: 13px;
+} 
+.handles{
+    display: flex;
+    justify-content: center;
 }
