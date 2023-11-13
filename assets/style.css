@@ -7,6 +7,9 @@ body, section{
     scroll-behavior: smooth;
 
 }
+h1,h2,h3,h4,h5,p{
+    cursor:default;
+}
 
 section{
     margin: 0
@@ -30,6 +33,12 @@ section{
     margin-left:30px
 }
 
+.left-nav{
+    display: flex;
+}
+.time{
+    margin-left: 20px;
+}
 .c{
     margin-right: 20px;
 }
@@ -95,7 +104,7 @@ section{
     }
     .hero-img{
         width: 430px;
-        display: none
+        margin-bottom: 20px;
     }
 }
 
@@ -127,12 +136,13 @@ section{
 
 
 
-.about{
+.about{ 
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70%;
+    overflow-y: hidden;
     background-color: var(--color-tertiary);
+
 } 
 .about-text{
     margin-top: -20px;
@@ -140,8 +150,8 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    font-family: sans-serif; 
 }
+
 p
 .story{
     font-size: 26px; 
@@ -150,10 +160,26 @@ p
     display:flex;
     justify-content: space-around   ;
     align-items: center;
+    margin-bottom: 20px;
 }
+
 
 .dokeibi{
     width: 280px
+}
+
+@media (max-width: 720px){
+    .dokeibi{
+        width: 160px
+    }
+    .story-container{
+        flex-direction: column;
+    }
+    .about-text{
+        font-size: 16;
+        width: 80%;
+        margin: 25px 0;
+    }
 }
 .skills{
     width: 100%;
@@ -162,7 +188,8 @@ p
 
 .communication{
     text-align: center;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    margin: 0 15px
 }
 .heading{
     text-decoration: underline var(--color-secondary) solid;
@@ -170,7 +197,12 @@ p
     display: flex;
     justify-content: center; 
     margin-bottom: 30px;
-    font-size: 30; 
+    text-align: center;
+    font-size: 27; 
+}
+
+@media (max-width: 520px){
+
 }
 
 .cards{
@@ -186,11 +218,11 @@ p
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 15px
-    
+    margin: 0 15px;
+    flex-wrap: wrap;
 
 }
- 
+
 .card-img-container{
     width: 130px;
     height: 125px; 
@@ -201,9 +233,8 @@ p
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: rgba(15, 15, 68, 0.5) 10px -10px
+    box-shadow: rgba(15, 15, 68, 0.5) 10px -10px;
 }
-
 
 .svg-image{
     width: 95px
@@ -216,11 +247,16 @@ p
     font-size: 14px;
 }
 
+
 .techstacks{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35px
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.comm-pretext{
+    font-size: 21;
 }
 .lang{
     display: flex;
@@ -228,17 +264,43 @@ p
     align-items: center;
     margin: 0 15px
 }
-.skill-svg{
+
+@media (max-width: 600px){
+    .card-container{
+
+    }
+    .card-img-container{
+        width: 105px;
+        height: 92px
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-des{
+        font-size: 14;
+    }
+    .heading{
+
+    }
+}
+    .skill-svg{
     width: 45px; 
     margin: 0 20px;
 }
+
 
 .reviews{
     width: 100%;
     height: auto;
     background-color: var(--color-tertiary);
 }
-
+@media (max-width: 520px){
+    reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .review-cards{
     display: flex;
     flex-direction: row;
@@ -246,31 +308,32 @@ p
     margin-top: 130px;
     width: 100%;
     margin-bottom: 35px;
+    flex-wrap: wrap;
 
 }
 
 .review-card{
     width: 310px;
-    min-height: 340px;
+    height: auto;
     background-color: var(--color-secondary);
     border-radius: 10px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     box-shadow: rgba(0, 0, 128, 0.2) 20px -20px;
-    margin: 0 30px
+    margin: 0 30px;
+    margin-bottom: 140px;
 }
 
+
 .review-card:hover{
-    margin-top: -20px;
-    margin-bottom: 20px;
-    transition: 0.6s;
+    background-color: #b58a00;
+    transition: 0.8s;
 }
  
 
 .review-img-container{
     width: 120px;
-    height: 120px; 
     border-radius: 50%;
     position: relative;
     margin-top: -60px;
@@ -294,11 +357,21 @@ p
 .review-text{
     font-size: 18px;
 }
-
+@media (max-width: 1020px){
+    .review-card{
+        width: 240px;
+    }
+    .review-detail{
+        font-size: 17;
+    }
+    .review-text{
+        font-size: 16px;
+    }
+}
 
 
 .contacts{
-    height: 80vh;
+    height: auto;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -309,6 +382,8 @@ p
     flex-direction: row-reverse;
     justify-content: space-around   ;
 }
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -342,7 +417,16 @@ form button{
     background: var(--color-secondary);
 
 }
-
+@media(max-width: 720px){
+    form input, textarea{
+        width: 420px;
+        font-size: 14px;
+    }
+    form button{
+        padding: 6px 14px;
+        font-size: 15;
+    }
+}
 form button:hover{
     background-color: #b58a00;
 }
@@ -371,4 +455,14 @@ i{
 .handle-logo{
     width: 45px;
     margin: 0 12px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:1024px){
+    .contact-container{
+        flex-direction: column;
+    }
+    .handles{
+        align-items: center;
+    }
 }
