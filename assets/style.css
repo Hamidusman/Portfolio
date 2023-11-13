@@ -17,7 +17,7 @@ section{
 :root{
     --color-primary: rgb(0, 0, 128);
     --color-secondary: #d0a003;
-    --color-tertiary: rgb(15, 15, 68);
+    --color-tertiary: rgb(3, 3, 94);
 }
 
 .navbar{
@@ -409,6 +409,9 @@ textarea{
     height: 220px;
 }
 
+
+
+
 form button{    
     padding: 9px 22px;
     border-radius: 5px; 
@@ -427,6 +430,12 @@ form button{
         font-size: 15;
     }
 }
+
+@media (max-width: 360px){
+    form input, textarea{
+       width: 320px
+    }   
+   }
 form button:hover{
     background-color: #b58a00;
 }
@@ -458,6 +467,10 @@ i{
     margin-bottom: 30px;
 }
 
+@media (max-width:480px){
+    .handle-logo{
+        width: 35px;
+    }}
 @media(max-width:1024px){
     .contact-container{
         flex-direction: column;
