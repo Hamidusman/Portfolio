@@ -76,6 +76,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .intro-text{
     
@@ -109,9 +110,6 @@ section{
 }
 
 @media (max-width: 900px){
-    .intro{
-        flex-direction: column-reverse;
-    }
 
     .pretext{
         font-size: 18;
@@ -119,6 +117,7 @@ section{
     }
     .aftertext{
         font-size: 16px;
+        width: 220px
     }
 }
 .hire{
@@ -218,7 +217,8 @@ p
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 15px;
+    text-align: center;
+    margin: 15px;
     flex-wrap: wrap;
 
 }
@@ -232,7 +232,6 @@ p
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     box-shadow: rgba(15, 15, 68, 0.5) 10px -10px;
 }
 
@@ -240,7 +239,8 @@ p
     width: 95px
 }
 .card-title{
-    margin-bottom: -5px
+    margin-bottom: -5px;
+    width: 130px
 }
 .card-des{
     text-align: center;
