@@ -3,7 +3,8 @@ body, section{
     padding: 0;
     overflow-x: hidden;
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -79,7 +80,7 @@ section{
     margin-bottom: -10px;
     color: var(--color-secondary);
 }
-.loading-text{
+.aftertext{
     width: 380px;
     margin-bottom: 30px; 
 }
@@ -87,26 +88,41 @@ section{
 .hero-img{
     width: 520px
 }
+
+@media (max-width: 1024px){
+    .navs a{
+        display:none
+    }
+    .hero-img{
+        width: 430px;
+        display: none
+    }
+}
+
+@media (max-width: 900px){
+    .intro{
+        flex-direction: column-reverse;
+    }
+
+    .pretext{
+        font-size: 18;
+        
+    }
+    .aftertext{
+        font-size: 16px;
+    }
+}
 .hire{
     position: relative;
     padding: 13px 30px;
-    background: var(--color-primary);
+    background: var(--color-secondary);
     text-decoration: none;
-    transition: 1s;
     border-radius: 10px;
-    color: white
+    color: white;
 }
 
 .hire:hover{
-    background-color: var(--color-secondary);
-    box-shadow:  2px -2px 5px #dfb425;
-}
-
-button{
-    padding: 6px 19px;
-    border-radius: 30px;
-    background-color: unset;
-    color: white;
+    background-color: #b58a00;
 }
 
 
@@ -133,6 +149,7 @@ p
 .story-container{
     display:flex;
     justify-content: space-around   ;
+    align-items: center;
 }
 
 .dokeibi{
@@ -153,8 +170,7 @@ p
     display: flex;
     justify-content: center; 
     margin-bottom: 30px;
-    font-size: 30;
-    font-family: sans-serif;
+    font-size: 30; 
 }
 
 .cards{
@@ -244,6 +260,12 @@ p
     box-shadow: rgba(0, 0, 128, 0.2) 20px -20px;
     margin: 0 30px
 }
+
+.review-card:hover{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    transition: 0.6s;
+}
  
 
 .review-img-container{
@@ -282,7 +304,11 @@ p
     flex-direction: column;
     align-content: center;
 }
- 
+.contact-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around   ;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -291,34 +317,40 @@ form {
 }
 
 form input, textarea{
-    width: 320px;
+    width: 610px;
     margin-bottom: 10px;
-    border-radius: 5px
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-size: 17;
+    padding:  5px 0 8px 8px;
 }
 
 form input{
-    height: 30px
+    height: 35px;
 }
 
 textarea{
-    height: 120px;
-    background-color: black;
+    height: 220px;
 }
 
-form button{
+form button{    
     padding: 9px 22px;
     border-radius: 5px; 
     font-size: 17px;
     border-color: unset;
+    background: var(--color-secondary);
 
 }
 
 form button:hover{
-    background: var(--color-secondary);
-    box-shadow: 0px 0px 10px var(--color-secondary),0px 0px 30px var(--color-secondary);
-    transition: .8s;
+    background-color: #b58a00;
 }
 
+.socials{
+    display:flex;
+
+}
 .comm-list{
     font-size: 19px;
     margin-bottom: 15px;
@@ -333,10 +365,10 @@ i{
 } 
 .handles{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .handle-logo{
-    width: 30px;
+    width: 45px;
     margin: 0 12px;
 }
