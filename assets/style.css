@@ -26,6 +26,8 @@ section{
     background-color: var(--color-secondary);
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%
 
 }
 
@@ -63,7 +65,6 @@ section{
     height: 94vh;
     background-image: url('images/87417.jpg');
     background-size: cover;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -291,7 +292,7 @@ p
 
 .reviews{
     width: 100%;
-    height: auto;
+    height: max-content;
     background-color: var(--color-tertiary);
 }
 @media (max-width: 520px){
@@ -314,7 +315,7 @@ p
 
 .review-card{
     width: 310px;
-    height: auto;
+    max-height: 490;
     background-color: var(--color-secondary);
     border-radius: 10px;
     display: flex;
@@ -328,6 +329,7 @@ p
 
 .review-card:hover{
     background-color: #b58a00;
+    transform: translateY(-15px);
     transition: 0.8s;
 }
  
@@ -335,7 +337,6 @@ p
 .review-img-container{
     width: 120px;
     border-radius: 50%;
-    position: relative;
     margin-top: -60px;
 }
 .review-detail{
