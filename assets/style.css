@@ -62,7 +62,7 @@ section{
 }
 
 .hero{
-    height: 94vh;
+    height: 100vh;
     background-image: url('images/87417.jpg');
     background-size: cover;
     display: flex;
@@ -122,7 +122,6 @@ section{
     }
 }
 .hire{
-    position: relative;
     padding: 13px 30px;
     background: var(--color-secondary);
     text-decoration: none;
@@ -188,8 +187,7 @@ p
 
 .communication{
     text-align: center;
-    margin-bottom: 25px;
-    margin: 0 15px
+    margin: 30px 15px;
 }
 .heading{
     text-decoration: underline var(--color-secondary) solid;
@@ -309,7 +307,7 @@ p
     margin-top: 130px;
     width: 100%;
     margin-bottom: 35px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 
 }
 
@@ -329,7 +327,6 @@ p
 
 .review-card:hover{
     background-color: #b58a00;
-    transform: translateY(-15px);
     transition: 0.8s;
 }
  
