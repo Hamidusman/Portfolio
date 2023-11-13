@@ -15,9 +15,9 @@ section{
     margin: 0
 }
 :root{
-    --color-primary: rgb(0, 0, 128);
+    --color-primary: #022f40;
     --color-secondary: #d0a003;
-    --color-tertiary: rgb(3, 3, 94);
+    --color-tertiary: #046e8f;
 }
 
 .navbar{
@@ -83,7 +83,7 @@ section{
 }
 .pretext{
     font-size: 25px;
-    margin-bottom: -40px; 
+    margin-bottom: -35px; 
 }
 .main-text{
     font-size: 45px;
@@ -232,7 +232,7 @@ p
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(15, 15, 68, 0.5) 10px -10px;
+    box-shadow: rgba(4, 110, 143, 0.5) 10px -10px;
 }
 
 .svg-image{
@@ -320,7 +320,7 @@ p
     display: flex;
     flex-direction: column; 
     align-items: center;
-    box-shadow: rgba(0, 0, 128, 0.2) 20px -20px;
+    box-shadow: rgba(2, 47, 64, 0.2) 20px -20px;
     margin: 0 30px;
     margin-bottom: 140px;
 }
