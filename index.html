@@ -6,16 +6,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/style.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="navbar">
-            <h2 class="time">Good {{time_of_day to be used}}</h2>
+            <h2 class="time" id="time"></h2>
         <div class="navs">
-            
+            <div class="dropdown-btn" onclick= dropDown>Dropdown</div>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+              </div>
+
+<!-- The dropdown content
             <a href="#home">HOME</a>
             <a href="#story">MY STORY</a>
             <a href="#skills">SKILLS</a>
-            <!--<a href="">Projects</a> -->
+            <!--<a href="">Projects</a> 
             <a href="#contacts">CONTACTS</a>
+        -->
         </div>
     </div>
     <section class="hero">
@@ -155,7 +164,7 @@
                 </div>
             </div>
 
-            
+            <!--
             <div class="review-card">
                 <img src="assets/images/WhatsApp Image 2023-11-11 at 20.41.22_f82be257.jpg" class="review-img-container"> 
                 <div class="review-detail">
@@ -195,6 +204,7 @@
             </div>
 
         </div>
+        -->
 
 
       </section>
@@ -242,3 +252,4 @@
 
 </html>
 
+<script src="assets/js/time-of-day.js"></script>

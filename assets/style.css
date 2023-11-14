@@ -20,6 +20,31 @@ section{
     --color-tertiary: #046e8f;
 }
 
+.dropdown-btn  {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+@media(max-width: 1024px){
+    .dropdown-btn  {
+        display: unset;
+    }
+}
+.dropdown-content {  
+    min-width: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+  }
+
+
+  .dropdown-content a {
+    padding: 12px 22px;
+    background-color: var(--color-primary);
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
 .navbar{
     height: 60px;
     display: flex;
@@ -48,7 +73,7 @@ section{
     margin: 0 30px; 
     text-decoration:dashed;
     color: unset;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .navs a:hover{
@@ -61,13 +86,36 @@ section{
     
 }
 
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(150px) scale(0.9);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
 .hero{
     height: 100vh;
     background-image: url('images/87417.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 .img{
     
@@ -78,6 +126,7 @@ section{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    animation: fade-up 0.9s; 
 }
 .intro-text{
     
