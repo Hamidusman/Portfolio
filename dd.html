@@ -1,71 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Dropdown</title>
-  <style>
-    /* Style the dropdown button */
-    .dropdown-btn {
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
+<!--
+      <section class="reviews">
+        <h1 class="heading">My Associate's Comments. Probably...</h1>
+z
+        <div class="review-cards">
+            <div class="review-card">
+                <img src="assets/images/test 1.jpg" class="review-img-container">
+                <div class="review-detail">
+                    <p class="name">Maryam Aliyu (I think)</p>
+                    <p class="review-title"><strong>Writer, UI/UX Designer (I think..)</strong></p>
+                </div> 
+                
+                <div class="review-text">  
+                    <p class="review-des">
+                        LMFAO Why did you do this?</p>
+                </div>
+            </div>
+
+        </div>
+
+
+      </section>
+
+
+        
+.reviews{
+    width: 100%;
+    height: max-content;
+    background-color: var(--color-tertiary);
+}
+@media (max-width: 520px){
+    reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+}
+.review-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 130px;
+    width: 100%;
+    margin-bottom: 35px;
+    flex-wrap: wrap; 
 
-    /* Style the dropdown content (hidden by default) */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
+}
+
+.review-card{
+    width: 310px;
+    max-height: 490;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: rgba(2, 47, 64, 0.2) 20px -20px;
+    margin: 0 30px;
+    margin-bottom: 140px;
+}
+
+
+.review-card:hover{
+    background-color: #b58a00;
+    transition: 0.8s;
+}
+ 
+
+.review-img-container{
+    width: 120px;
+    border-radius: 50%;
+    margin-top: -60px;
+}
+.review-detail{
+    font-size: 19;
+}
+.review-detail, .review-text{
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.review-text{
+    font-size: 18px;
+}
+@media (max-width: 1020px){
+    .review-card{
+        width: 240px;
     }
-
-    /* Style the dropdown items */
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-       
+    .review-detail{
+        font-size: 17;
     }
-
-    /* Change color on hover */
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
+    .review-text{
+        font-size: 16px;
     }
-  </style>
-</head>
-<body>
+}
 
-<!-- The dropdown button -->
-<div class="dropdown-btn" onclick="toggleDropdown()">Dropdown</div>
+        -->
 
-<!-- The dropdown content -->
-<div class="dropdown-content" id="myDropdown">
-  <a href="#">Item 1</a>
-  <a href="#">Item 2</a>
-  <a href="#">Item 3</a>
-</div>
-
-<script>
-  // Function to toggle the dropdown
-  function toggleDropdown() {
-    var dropdown = document.getElementById("myDropdown");
-    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-btn')) {
-      var dropdown = document.getElementById("myDropdown");
-      if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
-      }
-    }
-  }
-</script>
-
-</body>
-</html>

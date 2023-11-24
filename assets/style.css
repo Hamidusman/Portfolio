@@ -3,7 +3,7 @@ body, section{
     padding: 0;
     overflow-x: hidden;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: inter;
     scroll-behavior: smooth;
 
 }
@@ -25,14 +25,14 @@ section{
     margin: 0
 }
 :root{
-    --color-primary: #1b263b;
+    --color-primary: #081020;
     --color-secondary: #d0a003;
-    --color-tertiary: #1d3557
+    --color-tertiary: #161d2a
 }
 
 
 
-
+/* NAV */
 .dropdown-btn {
     padding: 10px;
     font-size: 16px;
@@ -55,8 +55,7 @@ section{
     z-index: 1; 
     text-align: center;
 }
-
-  /* Style the dropdown items */
+ 
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -64,18 +63,19 @@ section{
     display: block;
      
   }
-
-  /* Change color on hover */
+ 
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
 .nav{
     height: 80px;
     display: flex;   
-    background-color: rgb(41, 38, 38);
+    background-color: var(--color-primary);
     display: flex;
     justify-content: space-between;
+    position: fixed;
     align-items: center;
+    width: 100vw
     
 
 }
@@ -87,8 +87,7 @@ section{
 
 
 .text-gradient{
-    background: linear-gradient(to right, #ffcc00, #ff6600);
-    /* Replace color codes and adjust direction as needed */
+    background: linear-gradient(to right, #ffcc00, #ff6600); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -101,9 +100,8 @@ section{
 .c{
     margin-right: 20px;
 }
-.navs a{
-    margin: 0 50px;  
-    font-size: 12px;
+.navs a{  
+    ;
 }
 
 .navs a:hover{
@@ -112,9 +110,13 @@ section{
 }
 
 .navs{
-    margin-right: 20px;
+    display: flex;
+    gap: 30px;
+    margin-right: 25px;
     
 }
+/* NAV END */
+
 
 @keyframes fade-left {
     0%{
@@ -149,7 +151,7 @@ section{
         transform: translateY(0px) scale(1);
     }
 }
-
+/* HERO */
 .hero{
     height: 100vh;
     background-color: var(--color-primary);
@@ -157,16 +159,12 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.img{
-
-}
+} 
 .intro{
     margin-left: 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center; 
 }
 .intro-text{
     
@@ -204,14 +202,16 @@ section{
 }
 
 @media (max-width: 900px){
+    .intro{
+        margin-left: 10px;
+    }
 
-    .pretext{
-        font-size: 18;
+    .pretext{ 
         
     }
-    .aftertext{
-        font-size: 16px;
-        width: 220px
+    .aftertext{ 
+        font-size: 18; 
+        width: 90%
     }
 }
 .hire{
@@ -227,6 +227,9 @@ section{
 }
 
 
+/* HERO END */
+
+/* ABOUT */
 
 .about{ 
     display: flex;
@@ -234,12 +237,11 @@ section{
     align-items: center;
     overflow-y: hidden;
     background-color: var(--color-tertiary);
-    height: 100vh;
+    height: max-content
 
 } 
-.about-text{ 
-    position: relative;;
-    width: 40%; 
+.about-text{  
+    width: 35%; 
     display: flex;
     flex-direction: column; 
     font-size:19;
@@ -252,8 +254,7 @@ p
 .story-container{
     display:flex;
     justify-content: space-around   ;
-    align-items: center; 
-    height: 70vh
+    align-items: center;  
 }
 
 
@@ -263,17 +264,21 @@ p
 
 @media (max-width: 720px){
     .dokeibi{
-        width: 160px
+        width: 250px
     }
     .story-container{
         flex-direction: column;
     }
     .about-text{
-        font-size: 16;
-        width: 80%;
+        font-size: 17;
+        width: 95%;
         margin: 25px 0;
     }
 }
+
+/* END OF ABOUT */
+
+/* SKILLS */
 .skills{
     width: 100%;
     background-color: var(--color-primary)
@@ -337,180 +342,11 @@ p
     margin-top: 20px; 
 }
 
-.skill-des{
+
+.blogpost{
+    
 }
 
-.skill-des:hover{
-     
-}
-
-
-
-
-
-
-
-
-.cards{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.card-container{
-    width: 210px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 15px;
-    flex-wrap: wrap;
-
-}
-
-.card-img-container{
-    width: 130px;
-    height: 125px; 
-    border-radius: 5px;
-    background-color: var(--color-secondary);
-    margin-bottom: -5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(4, 110, 143, 0.5) 10px -10px;
-}
-
-.svg-image{
-    width: 95px
-}
-.card-title{
-    margin-bottom: -5px;
-    width: 130px
-}
-.card-des{
-    text-align: center;
-    font-size: 14px;
-}
-
-
-.techstacks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-    flex-wrap: wrap;
-}
-.comm-pretext{
-    font-size: 21;
-}
-.lang{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 15px
-}
-
-@media (max-width: 600px){
-    .card-container{
-
-    }
-    .card-img-container{
-        width: 105px;
-        height: 92px
-    }
-    .card-title{
-        font-size: 18px;
-    }
-    .card-des{
-        font-size: 14;
-    }
-    .heading{
-
-    } .name
-}
-    .skill-svg{
-    width: 45px; 
-    margin: 0 20px;
-}
-
-
-.reviews{
-    width: 100%;
-    height: max-content;
-    background-color: var(--color-tertiary);
-}
-@media (max-width: 520px){
-    reviews{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.review-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 130px;
-    width: 100%;
-    margin-bottom: 35px;
-    flex-wrap: wrap; 
-
-}
-
-.review-card{
-    width: 310px;
-    max-height: 490;
-    background-color: var(--color-secondary);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    box-shadow: rgba(2, 47, 64, 0.2) 20px -20px;
-    margin: 0 30px;
-    margin-bottom: 140px;
-}
-
-
-.review-card:hover{
-    background-color: #b58a00;
-    transition: 0.8s;
-}
- 
-
-.review-img-container{
-    width: 120px;
-    border-radius: 50%;
-    margin-top: -60px;
-}
-.review-detail{
-    font-size: 19;
-}
-.review-detail, .review-text{
-    margin: 0 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-
-.review-text{
-    font-size: 18px;
-}
-@media (max-width: 1020px){
-    .review-card{
-        width: 240px;
-    }
-    .review-detail{
-        font-size: 17;
-    }
-    .review-text{
-        font-size: 16px;
-    }
-}
 
 
 .contacts{
