@@ -8,6 +8,10 @@ body, section{
 
 }
 
+*{
+    
+    scroll-behavior: smooth;
+}
 a{
     text-decoration:dashed;
     color: unset;
@@ -87,7 +91,7 @@ section{
 
 
 .text-gradient{
-    background: linear-gradient(to right, #ffcc00, #ff6600); 
+    background: linear-gradient(to right, var(--color-secondary), #ff6600); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -99,21 +103,19 @@ section{
 }
 .c{
     margin-right: 20px;
-}
-.navs a{  
-    ;
-}
-
-.navs a:hover{
-    text-decoration: underline;
-    text-underline-offset: 5px;
+} 
+.navs a:hover{ 
+    background: linear-gradient(to right, var(--color-secondary), #ff6600); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: .4s;
 }
 
 .navs{
     display: flex;
     gap: 30px;
     margin-right: 25px;
-    
 }
 /* NAV END */
 
@@ -166,9 +168,7 @@ section{
     justify-content: space-between;
     align-items: center; 
 }
-.intro-text{
-    
-}
+
 .pretext{
     font-size:  23;
     margin-bottom: -35px; 
@@ -234,10 +234,9 @@ section{
 .about{ 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-y: hidden;
+    align-items: center; 
     background-color: var(--color-tertiary);
-    height: 100vh
+    height: auto
 
 } 
 .about-text{  
@@ -245,16 +244,18 @@ section{
     display: flex;
     flex-direction: column; 
     font-size:19;
+    height: auto;
+    margin-bottom: 15px
 }
 
-p
+
 .story{
     font-size: 26px; 
 }
 .story-container{
     display:flex;
     justify-content: space-around   ;
-    align-items: center;  
+    align-items: center;   
 }
 
 
@@ -288,7 +289,7 @@ p
     text-underline-offset: 30%;
     display: flex;
     justify-content: center; 
-    margin-bottom: 30px;
+    margin: 90px 0;
     text-align: center;
     font-size: 27; 
 }
@@ -296,10 +297,9 @@ p
 @media (max-width: 520px){
 
 }
-
-
+ 
 .skill-cards{
-    margin: 0 65px;
+    margin: 45 65px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -316,7 +316,7 @@ p
 }
 
 .skill-card:hover{
-    background-color: #cc9d01;
+    background-color: rgb(183, 142, 8);
     
     color:white;
     transition: 0.7s
@@ -349,6 +349,8 @@ p
 }
 
 .card-texts{
+    margin-top: -10;
+    margin-left: 3px;
     display: flex;
 }
 .card{
@@ -363,7 +365,7 @@ p
 
 .card-content{
     width: 280px;
-    height:360px;
+    height:auto;
     display: flex;
     flex-direction: column; 
     background-color: var(--color-primary);
@@ -371,6 +373,9 @@ p
     margin: 30px
 }
 
+.card-content:hover{
+    background-color: var(--color-secondary);
+}
 @media (max-width:1024px) {
     .card-content{
         width: 160px
@@ -386,7 +391,8 @@ p
 .card-img{
     width: 100%;
     height: 180px;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .card-title{
@@ -397,7 +403,8 @@ p
 .card-description{
     color: rgb(87, 87, 87);
     margin-top: 5px;
-    margin-left: 3px
+    margin-left: 3px;
+    font-size: 14; 
 }
 
 .date{
@@ -424,22 +431,12 @@ p
         margin-top: 17;
         flex-direction: column;
     }
-}
-
-.about-text{ 
-}
-
+} 
 
 @media (max-width: 600px) { 
-    .postcards{
-        width: 100vw;
-        height: auto;
-        margin-top: 20px;
-        display: flex;
-        justify-content: left;
-        align-items: normal;
-        flex-wrap: wrap;
-    }
+    .heading{
+        margin: 30px 0
+    } 
     .blogposts{  
         margin: 0 5px
     }
@@ -451,7 +448,6 @@ p
         display: none;
     }
     .card{
-        margin-top: 30px;
         margin-left: 30px;
         border-radius: 15px;
         display: flex;
@@ -462,22 +458,30 @@ p
     .card-content{
         width: 100%;     
         flex-direction: unset;
-        height: auto; 
-        margin-left: 15
+        margin-left: 15; 
+        border-radius: 0;
     }    
     
     .card-img{
         max-width: 25%;
-        height: 110;
+        height: 100%;
         margin-right: 10px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0
 
     }
 
     .card-title{
         font-size:small
     }
-}
+} 
+/* PROJECTS */
 
+.projects{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+}
 
 .contacts{
     height: auto;
@@ -492,7 +496,8 @@ p
     justify-content: space-around   ;
 }
 
-
+.heading{ 
+}
 form {
     display: flex;
     flex-direction: column;
