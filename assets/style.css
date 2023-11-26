@@ -79,7 +79,8 @@ section{
     justify-content: space-between;
     position: fixed;
     align-items: center;
-    width: 100vw
+    width: 100vw;
+    z-index: 2;
     
 
 }
@@ -163,7 +164,7 @@ section{
     justify-content: center;
 } 
 .intro{
-    margin-left: 60px;
+    margin:0px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -186,11 +187,7 @@ section{
     animation: fade-right 0.7s; 
     font-size:  23;
 }
-
-.hero-img{
-    width: 520px
-}
-
+ 
 @media (max-width: 1024px){
     .navs a{
         display:none
@@ -226,6 +223,44 @@ section{
     background-color: #b58a00;
 }
 
+
+.frame{  
+    display: flex;  
+    justify-content: right;
+    width: auto;
+}
+
+
+.blank-frame, .colored-frame{
+    width: 330px;
+    height: 310px;
+
+
+}
+.blank-frame{
+    border: 3px solid white;
+    position: relative;
+    left: 150px;
+}
+
+.colored-frame{ 
+    background-color: #b58a00; 
+    border: 3px solid #b58a00;  
+    display: flex; 
+    flex-direction: column;
+    margin-left: -30px;
+    margin-top:-20;
+    position: relative;
+    right: 120px;
+    bottom: 5px;
+    justify-content: flex-end;
+    
+}
+
+.hero-img{
+    display: block;
+    width: 100%;
+}
 
 /* HERO END */
 
