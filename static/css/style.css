@@ -16,11 +16,7 @@ a{
     text-decoration:dashed;
     color: unset;
 }
-
-457b9d
-1d3557
-1b263b
-
+  
 h1,h2,h3,h4,h5,p{
     cursor:default;
 }
@@ -408,14 +404,13 @@ section{
     width: 35%; 
     display: flex;
     flex-direction: column; 
-    font-size:19;
-    height: auto;
+    font-size:16; 
     margin-bottom: 15px
 }
 
 
 .story{
-    font-size: 26px; 
+    font-size: 14px; 
 }
 .story-container{
     display:flex;
