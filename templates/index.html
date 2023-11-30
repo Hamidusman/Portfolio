@@ -92,70 +92,16 @@
  
         <div class="skill-cards">
                 
-            
+            {% for stack in techstack %}
             <div class="skill-card">
                 <div class="skill-content">
                     <img class="skill-img" src="assets/svg/1024px-HTML5_Badge.svg.png">
-                    <h3 class="skill-title">HTML</h3>
-                    <p class="skill-des">As the foundation of web development, I have a strong proficiency of HTML. Capable of building well-structured and semantic web pages</p>
-                </div>
-
-
+                    <h3 class="skill-title">{{stack.title}}</h3>
+                    <p class="skill-des">{{stack.description}}</p>
+                </div> 
+           
             </div>
-        
-            <div class="skill-card">
-                <div class="skill-content">
-                    <img class="skill-img" src="assets/svg/CSS3_logo.svg">
-                    <h3 class="skill-title">CSS</h3>
-                    <p class="skill-des">With a good familiarity with CSS, I am capable of styling HTML files. giving them a more professional look</p>
-                </div>
-    
-    
-            </div>
-        
-            <div class="skill-card">
-                <div class="skill-content">
-                    <img class="skill-img" src="assets/svg/Unofficial_JavaScript_logo_2.svg.png">
-                    <h3 class="skill-title">JavaScript</h3>
-                    <p class="skill-des">Currently getting more familiar with JavaScript, to obtain a stronger proficiency of the language.</p>
-                </div>
-    
-    
-            </div> 
-        
-            <div class="skill-card">
-                <div class="skill-content">
-                    <img class="skill-img" src="assets/svg/React-icon.svg.png">
-                    <h3 class="skill-title">React</h3>
-                    <p class="skill-des">
-                            Currently expanding my skills in React, delving into the world of front-end development to complement my knowledge in Python</p>
-                </div>
-    
-    
-            </div>
-        
-            <div class="skill-card">
-                <div class="skill-content">
-                    <img class="skill-img" src="assets/svg/Python.svg.png">
-                    <h3 class="skill-title">Python</h3>
-                    <p class="skill-des">
-                        Utilizing Python as my backend development language, I specialize in creating efficient and scalable solutions, showcasing expertise in Django.
-                    </p>
-                </div>
-    
-    
-            </div> 
-        
-            <div class="skill-card">
-                <div class="skill-content">
-                    <img class="skill-img" src="assets/svg/django.png">
-                    <h3 class="skill-title">Django</h3>
-                    <p class="skill-des">
-                            As a Python programmer, I harness the power of Django to build robusts and scalable backend solutions.</p>
-                </div>
-    
-    
-            </div> 
+            {% endfor %}
         </div>
     </section>
 
