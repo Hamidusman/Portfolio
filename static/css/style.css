@@ -170,12 +170,12 @@ section{
 .main-text{
     font-size: 45px; 
     color: var(--color-secondary);
-    animation: fade-left 1.6s;
+    animation: fade-right .8s;
 }
 .aftertext{
     width: 550px;
     margin-bottom: 30px;  
-    animation:  fade-right 2.4s;
+    animation:  fade-right 1.2s;
     font-size:  17;
 }
 .home-img{
@@ -228,12 +228,11 @@ section{
 
    background: linear-gradient(to right, var(--color-secondary), #ff6600); 
    -webkit-background-clip: text;
-  background-clip: text;
+    background-clip: text;
     color: transparent;
-   position: relative; 
-   font-weight: bold; 
-   letter-spacing: 3px;
-   z-index: 1;
+    position: relative; 
+    font-weight: bold; 
+    z-index: 1;
 }
 
 .text-gradient:before {
@@ -562,7 +561,7 @@ heading
 .text-container{
     color:#f9f9f9;
     display: unset;
-    font-size: 18;
+    font-size: 16;
     display: flex;
     flex-direction: column;
     justify-content: center;
