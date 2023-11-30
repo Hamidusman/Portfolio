@@ -3,12 +3,12 @@ body, section{
     padding: 0;
     overflow-x: hidden;
     color: white;
-    font-family: inter;
     scroll-behavior: smooth;
 
 }
 
 *{
+    font-family: inter;
     
     scroll-behavior: smooth;
 }
@@ -91,12 +91,7 @@ section{
 
 
 
-.text-gradient{
-    background: linear-gradient(to right, var(--color-secondary), #ff6600); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
+ 
 @media (max-width: 480px){
     .time{
         font-size: 18
@@ -201,7 +196,7 @@ section{
 @media (max-width: 900px){
     .intro{
         margin-left: 10px;
-    }
+    } 
 
     .pretext{ 
         
@@ -222,46 +217,183 @@ section{
 .hire:hover{
     background-color: #b58a00;
 }
+.glitch-wrapper{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.text-gradient {
 
-
-.frame{  
-    display: flex;  
-    justify-content: right;
-    width: auto;
+   background: linear-gradient(to right, var(--color-secondary), #ff6600); 
+   -webkit-background-clip: text;
+  background-clip: text;
+    color: transparent;
+   position: relative; 
+   font-weight: bold; 
+   letter-spacing: 3px;
+   z-index: 1;
 }
 
-
-.blank-frame, .colored-frame{
-    width: 330px;
-    height: 310px;
-
-
-}
-.blank-frame{
-    border: 3px solid white;
-    position: relative;
-    left: 150px;
-}
-
-.colored-frame{ 
-    background-color: #b58a00; 
-    border: 3px solid #b58a00;  
-    display: flex; 
-    flex-direction: column;
-    margin-left: -30px;
-    margin-top:-20;
-    position: relative;
-    right: 120px;
-    bottom: 5px;
-    justify-content: flex-end;
-    
+.text-gradient:before {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: -2px;
+   width: 100%;
+   color: 50px;
+   background-color: #000000;
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-before 3s infinite linear alternate-reverse;
 }
 
-.hero-img{
-    display: block;
-    width: 100%;
+.text-gradient:after {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 2px;
+   width: 100%;
+   color: 50px;
+   background-color: #000000;
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-after 2s infinite linear alternate-reverse;
 }
 
+@keyframes noise-before {
+   0% {
+      clip: rect(61px, 9999px, 52px, 0);
+   }
+   5% {
+      clip: rect(33px, 9999px, 144px, 0);
+   }
+   10% {
+      clip: rect(121px, 9999px, 115px, 0);
+   }
+   15% {
+      clip: rect(144px, 9999px, 162px, 0);
+   }
+   20% {
+      clip: rect(62px, 9999px, 180px, 0);
+   }
+   25% {
+      clip: rect(34px, 9999px, 42px, 0);
+   }
+   30% {
+      clip: rect(147px, 9999px, 179px, 0);
+   }
+   35% {
+      clip: rect(99px, 9999px, 63px, 0);
+   }
+   40% {
+      clip: rect(188px, 9999px, 122px, 0);
+   }
+   45% {
+      clip: rect(154px, 9999px, 14px, 0);
+   }
+   50% {
+      clip: rect(63px, 9999px, 37px, 0);
+   }
+   55% {
+      clip: rect(161px, 9999px, 147px, 0);
+   }
+   60% {
+      clip: rect(109px, 9999px, 175px, 0);
+   }
+   65% {
+      clip: rect(157px, 9999px, 88px, 0);
+   }
+   70% {
+      clip: rect(173px, 9999px, 131px, 0);
+   }
+   75% {
+      clip: rect(62px, 9999px, 70px, 0);
+   }
+   80% {
+      clip: rect(24px, 9999px, 153px, 0);
+   }
+   85% {
+      clip: rect(138px, 9999px, 40px, 0);
+   }
+   90% {
+      clip: rect(79px, 9999px, 136px, 0);
+   }
+   95% {
+      clip: rect(25px, 9999px, 34px, 0);
+   }
+   100% {
+      clip: rect(173px, 9999px, 166px, 0);
+   }
+}
+
+@keyframes noise-after {
+   0% {
+      clip: rect(26px, 9999px, 33px, 0);
+   }
+   5% {
+      clip: rect(140px, 9999px, 198px, 0);
+   }
+   10% {
+      clip: rect(184px, 9999px, 89px, 0);
+   }
+   15% {
+      clip: rect(121px, 9999px, 6px, 0);
+   }
+   20% {
+      clip: rect(181px, 9999px, 99px, 0);
+   }
+   25% {
+      clip: rect(154px, 9999px, 133px, 0);
+   }
+   30% {
+      clip: rect(134px, 9999px, 169px, 0);
+   }
+   35% {
+      clip: rect(26px, 9999px, 187px, 0);
+   }
+   40% {
+      clip: rect(147px, 9999px, 137px, 0);
+   }
+   45% {
+      clip: rect(31px, 9999px, 52px, 0);
+   }
+   50% {
+      clip: rect(191px, 9999px, 109px, 0);
+   }
+   55% {
+      clip: rect(74px, 9999px, 54px, 0);
+   }
+   60% {
+      clip: rect(145px, 9999px, 75px, 0);
+   }
+   65% {
+      clip: rect(153px, 9999px, 198px, 0);
+   }
+   70% {
+      clip: rect(99px, 9999px, 136px, 0);
+   }
+   75% {
+      clip: rect(118px, 9999px, 192px, 0);
+   }
+   80% {
+      clip: rect(1px, 9999px, 83px, 0);
+   }
+   85% {
+      clip: rect(145px, 9999px, 98px, 0);
+   }
+   90% {
+      clip: rect(121px, 9999px, 154px, 0);
+   }
+   95% {
+      clip: rect(156px, 9999px, 44px, 0);
+   }
+   100% {
+      clip: rect(67px, 9999px, 122px, 0);
+   }
+} 
 /* HERO END */
 
 /* ABOUT */
@@ -400,9 +532,10 @@ section{
 
 .card-content{
     width: 280px;
-    height:auto;
+    height: 370;
     display: flex;
     flex-direction: column; 
+    justify-content: spa;
     background-color: var(--color-primary);
     border-radius: 10px;
     margin: 30px
@@ -420,6 +553,9 @@ section{
 .card-texts{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10;
+    height: 100%;
 }
 
  
@@ -432,14 +568,14 @@ section{
 
 .card-title{
     margin-left: 1px;
-    margin-top: 2px
+    margin-top: 10px;
+    font-size: 23px
 }
 
 .card-description{
     color: rgb(87, 87, 87);
     margin-top: 5px;
-    margin-left: 3px;
-    font-size: 14; 
+    margin-left: 3px; 
 }
 
 .date{
@@ -514,13 +650,54 @@ section{
 
 .projects{
     width: 100%;
-    height: 100%;
-    background-color: var(--color-primary);
-}
-
-.contacts{
     height: auto;
     background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container{
+    width: 80%;
+    height: auto;
+    background-color: var(--color-tertiary); 
+    margin-bottom: 60px;
+}
+
+.project{
+    
+}
+.project-container, .image-container{
+
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.image-container{
+    width: 100%;
+    height: 170px;
+    background-color: red;
+    
+}
+
+.text-container{
+    color:#f9f9f9;
+    display: unset;
+    font-size: 18;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+#proj-info{
+    margin: 10 25px;   
+
+}
+
+/* PROJECTS END */
+.contacts{
+    height: auto;
+    background-color: var(--color-tertiary);
     display: flex;
     flex-direction: column;
     align-content: center;
