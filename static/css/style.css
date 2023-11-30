@@ -159,7 +159,7 @@ section{
 .home-text{ 
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 30px;
 
 }
 
@@ -376,6 +376,23 @@ heading
 }
 
 
+.experience{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-tertiary);
+}
+
+
+.position{
+    margin-left: 10;
+}
+.organization{
+    margin-left: 25px;
+}
+
+li{
+    text-decoration: dashed;
+}
 .blog{
     width: 100%;
     background-color: var(--color-tertiary);
