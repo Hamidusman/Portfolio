@@ -3,7 +3,7 @@ body, section{
     padding: 0;
     overflow-x: hidden;
     color: white;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 
 }
 
