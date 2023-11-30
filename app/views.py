@@ -4,6 +4,7 @@ from .models import TechStack, Work
 def index(request):
     
     techstack = TechStack.objects.all()
-    context = {'techstack' : techstack}
+    projects = Work.objects.all()
+    context = {'techstack' : techstack, 'projects':projects}
     return render(request, 'index.html', context)
 

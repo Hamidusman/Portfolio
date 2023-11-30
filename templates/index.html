@@ -40,8 +40,22 @@
         </div>
     </div>
     <section class="hero">
+        <div class="home-container"> 
+                
+                <div class="home-text">
+                    <div class="pretext">Hello world</div>
+                    <div class="main-text">Abdulhamid Usman</div>
+                    <div class="aftertext">I am a self-taught Web Developer with about 2 years of experience specialized in
+                        <span class="text-gradient">Backend development</span>
+                    </div>
+                </div>
 
-        <div class="intro">
+                <div class="home-img-container">
+                    <img src="{% static 'images/dokeibi.png' %}" alt="" class='home-img'>
+                </div> 
+        </div>
+
+        <!--<div class="intro">
             <div class="intro-texts">
                 <h3 class="pretext">
                     Hello world, I am
@@ -54,9 +68,8 @@
             </div> 
 
             
-            <div class="img-container">
-                <img src="{% static 'images/dokeibi.png' %}" alt="">
-            </div>
+            
+        </div>-->
     </section>
     
     <section class="about" id="story">
@@ -134,9 +147,10 @@
      <!--PROJECT SECTION -->
     <section class="projects">
         <h1 class="heading">Projects</h1>
+        {% for proj in projects %}
         <div class="project-container"> 
 
-                <div class="image-container"></div>
+                <img class="image-container" src="{{proj.image.url}}">
 
                 <div class="text-container">
                     <div id="proj-info" class="proj-title">Project: Buildit Consoltation Limited</div>
@@ -145,6 +159,7 @@
                     <div id="proj-info" class="proj-link">Links: <a href=""></a></div>
                 </div> 
         </div>
+        {% endfor %}
     </section>
     
   <!--PROJECT SECTION ENDS -->

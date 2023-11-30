@@ -146,54 +146,59 @@ section{
     }
 }
 /* HERO */
-.hero{
+.home-container{
     height: 100vh;
     background-color: var(--color-primary);
-    background-size: cover;
+    background-size: cover; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-around; 
+} 
+
+
+.home-text{ 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-} 
-.intro{
-    margin:0px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    margin: 0 20px;
+
 }
 
 .pretext{
     font-size:  23; 
-    animation:  fade-right 0.7s;
+    animation: fade-right .4s;
 }
 .main-text{
     font-size: 45px; 
     color: var(--color-secondary);
-    animation: fade-left 0.5s;
+    animation: fade-left 1.6s;
 }
 .aftertext{
     width: 550px;
-    margin-bottom: 30px; 
-    animation: fade-right 0.7s; 
-    font-size:  23;
+    margin-bottom: 30px;  
+    animation:  fade-right 2.4s;
+    font-size:  17;
 }
- 
+.home-img{
+    width: 420px;
+}
 @media (max-width: 1024px){
     .navs a{
         display:none
     }
-    .hero-img{
-        width: 430px;
+    .home-container{
+    }
+    .home-img{
+        width: 320px;
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 900px){
-    .intro{
-        margin-left: 10px;
-    } 
 
-    .pretext{ 
-        
+    .home-text{ 
+    }
+    .home-img{
+        display: none;
     }
     .aftertext{ 
         font-size: 18; 
@@ -257,137 +262,7 @@ section{
    animation: noise-after 2s infinite linear alternate-reverse;
 }
 
-@keyframes noise-before {
-   0% {
-      clip: rect(61px, 9999px, 52px, 0);
-   }
-   5% {
-      clip: rect(33px, 9999px, 144px, 0);
-   }
-   10% {
-      clip: rect(121px, 9999px, 115px, 0);
-   }
-   15% {
-      clip: rect(144px, 9999px, 162px, 0);
-   }
-   20% {
-      clip: rect(62px, 9999px, 180px, 0);
-   }
-   25% {
-      clip: rect(34px, 9999px, 42px, 0);
-   }
-   30% {
-      clip: rect(147px, 9999px, 179px, 0);
-   }
-   35% {
-      clip: rect(99px, 9999px, 63px, 0);
-   }
-   40% {
-      clip: rect(188px, 9999px, 122px, 0);
-   }
-   45% {
-      clip: rect(154px, 9999px, 14px, 0);
-   }
-   50% {
-      clip: rect(63px, 9999px, 37px, 0);
-   }
-   55% {
-      clip: rect(161px, 9999px, 147px, 0);
-   }
-   60% {
-      clip: rect(109px, 9999px, 175px, 0);
-   }
-   65% {
-      clip: rect(157px, 9999px, 88px, 0);
-   }
-   70% {
-      clip: rect(173px, 9999px, 131px, 0);
-   }
-   75% {
-      clip: rect(62px, 9999px, 70px, 0);
-   }
-   80% {
-      clip: rect(24px, 9999px, 153px, 0);
-   }
-   85% {
-      clip: rect(138px, 9999px, 40px, 0);
-   }
-   90% {
-      clip: rect(79px, 9999px, 136px, 0);
-   }
-   95% {
-      clip: rect(25px, 9999px, 34px, 0);
-   }
-   100% {
-      clip: rect(173px, 9999px, 166px, 0);
-   }
-}
 
-@keyframes noise-after {
-   0% {
-      clip: rect(26px, 9999px, 33px, 0);
-   }
-   5% {
-      clip: rect(140px, 9999px, 198px, 0);
-   }
-   10% {
-      clip: rect(184px, 9999px, 89px, 0);
-   }
-   15% {
-      clip: rect(121px, 9999px, 6px, 0);
-   }
-   20% {
-      clip: rect(181px, 9999px, 99px, 0);
-   }
-   25% {
-      clip: rect(154px, 9999px, 133px, 0);
-   }
-   30% {
-      clip: rect(134px, 9999px, 169px, 0);
-   }
-   35% {
-      clip: rect(26px, 9999px, 187px, 0);
-   }
-   40% {
-      clip: rect(147px, 9999px, 137px, 0);
-   }
-   45% {
-      clip: rect(31px, 9999px, 52px, 0);
-   }
-   50% {
-      clip: rect(191px, 9999px, 109px, 0);
-   }
-   55% {
-      clip: rect(74px, 9999px, 54px, 0);
-   }
-   60% {
-      clip: rect(145px, 9999px, 75px, 0);
-   }
-   65% {
-      clip: rect(153px, 9999px, 198px, 0);
-   }
-   70% {
-      clip: rect(99px, 9999px, 136px, 0);
-   }
-   75% {
-      clip: rect(118px, 9999px, 192px, 0);
-   }
-   80% {
-      clip: rect(1px, 9999px, 83px, 0);
-   }
-   85% {
-      clip: rect(145px, 9999px, 98px, 0);
-   }
-   90% {
-      clip: rect(121px, 9999px, 154px, 0);
-   }
-   95% {
-      clip: rect(156px, 9999px, 44px, 0);
-   }
-   100% {
-      clip: rect(67px, 9999px, 122px, 0);
-   }
-} 
 /* HERO END */
 
 /* ABOUT */
@@ -404,34 +279,32 @@ section{
     width: 35%; 
     display: flex;
     flex-direction: column; 
-    font-size:16; 
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    font-size: 18;
+    letter-spacing: 0.05mm;
 }
 
 
-.story{
-    font-size: 14px; 
-}
 .story-container{
     display:flex;
     justify-content: space-around   ;
     align-items: center;   
 }
-
+heading
 
 .dokeibi{
-    width: 280px
+    width: 340px
 }
 
-@media (max-width: 720px){
+@media (max-width: 1024px){
     .dokeibi{
-        width: 250px
+        width: 320px
     }
     .story-container{
+        margin: 30px;
         flex-direction: column;
     }
-    .about-text{
-        font-size: 17;
+    .about-text{ 
         width: 95%; 
     }
 }
@@ -449,7 +322,7 @@ section{
     text-underline-offset: 30%;
     display: flex;
     justify-content: center; 
-    margin: 90px 0;
+    margin: 60px 0;
     text-align: center;
     font-size: 27; 
 }
@@ -494,7 +367,7 @@ section{
 }
 
 .skill-des{
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .skill-img{
