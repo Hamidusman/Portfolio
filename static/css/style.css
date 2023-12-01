@@ -382,16 +382,26 @@ heading
     background-color: var(--color-tertiary);
 }
 
+.experience-container{
 
+    border-left: 4px solid white ;
+    margin-left: 20px;
+}
 .position{
-    margin-left: 10;
+    margin-left: 15;
+    font-size: 23px;
+    color: var(--color-secondary)
 }
 .organization{
     margin-left: 25px;
-}
+    font-weight: 900;
+    font-size: 19;
 
-li{
-    text-decoration: dashed;
+
+}li
+
+.experience-container ul{
+    color:  var(--color-secondary);
 }
 .blog{
     width: 100%;
@@ -671,9 +681,7 @@ form button:hover{
     margin-bottom: 15px;
 }
 
-li{
-    list-style-type: none;
-}
+
 
 i{
     padding: 13px;
