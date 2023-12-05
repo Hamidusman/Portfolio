@@ -385,13 +385,18 @@ heading
 .experience-container{
 
     border-left: 4px solid white ;
-    margin-left: 20px;
+    margin-bottom: 20px
+
 }
 .position{
     margin-left: 15;
     font-size: 23px;
     color: var(--color-secondary)
 }
+
+.achievement{
+    width: 90%
+    }
 .organization{
     margin-left: 25px;
     font-weight: 900;
@@ -400,8 +405,12 @@ heading
 
 }li
 
+.achievements{
+    width: 30px
+}
 .experience-container ul{
-    color:  var(--color-secondary);
+    width:100%;
+    flex-wrap: wrap
 }
 .blog{
     width: 100%;
