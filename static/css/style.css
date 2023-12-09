@@ -146,31 +146,37 @@ section{
     }
 }
 /* HERO */
-.home-container{
+.index{
     height: 100vh;
-    background-color: var(--color-primary);
-    background-size: cover; 
+    width: 100vw;
+    background-color: var(--color-primary); 
     display: flex; 
     align-items: center;
-    justify-content: space-around; 
+
 } 
 
 
-.home-text{ 
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
+.{ 
+    display: flex; 
 
 }
+.intro{ 
+    flex-wrap: wrap;
+}
+.pretext, .main-text, .aftertext{
+    
+    margin-left: 25px;
+    flex-wrap: wrap;
+}
+.pretext{ 
+    animation: fade-right .4s;  
 
-.pretext{
-    font-size:  23; 
-    animation: fade-right .4s;
 }
 .main-text{
     font-size: 45px; 
     color: var(--color-secondary);
     animation: fade-right .8s;
+    margin-top: -10px; 
 }
 .aftertext{
     width: 550px;
