@@ -144,7 +144,7 @@
                 <img class="card-img" src="assets\photos\3d-abstract-cyber-particle-design-background.jpg" alt="">
 
                 <div class="card-texts">
-                    <div class="card-title">hahksa nsdiwanad d wwwnndansd  ajwdnwnaa</div>
+                    <div class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
                     <!--<div class="card-description">sajwnda</div>-->
                     <div class="date">
                         <p>26/19/2023 @ 8:20</p> 
@@ -157,21 +157,22 @@
 
 
      <!--PROJECT SECTION -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <h1 class="heading">Projects</h1>
-        {% for proj in projects %}
+       <!-- {% for proj in projects %}-->
         <div class="project-container"> 
 
                 <img class="image-container" src="{{proj.image.url}}">
 
                 <div class="text-container">
-                    <div id="proj-info" class="proj-title">Project: {{proj.title}}</div>
-                    <div id="proj-info" class="proj-des">Description:{{proj.description}}</div>
-                    <div id="proj-info" class="proj-upload">Technologies: {{proj.tech_stack}}</div>
-                    <div id="proj-info" class="proj-link">Links: <a href=""></a></div>
+                    <div id="proj-info" class="proj-title">Project: Title</div>
+                    <div id="proj-info" class="proj-des">Description:des</div>
+                    <div id="proj-info" class="proj-upload">Technologies: techstack</div>
+                    <div id="proj-info" class="proj-link">Link: <a href="">Dessnuts.com</a></div>
                 </div> 
         </div>
-        {% endfor %}
+        <!--
+        {% endfor %}-->
     </section>
     
   <!--PROJECT SECTION ENDS -->
@@ -195,20 +196,20 @@
                 <div class="socials">
                     
                     <a href="http://github.com/Hamidusman" target="_blank" rel="noopener noreferrer">
-                        <img class="handle-logo" src="assets/svg/github.svg" alt="">
+                        <img class="handle-logo" src="{% static 'svg/github.svg' %}" alt="">
                         
                     <a href="https://www.linkedin.com/in/abdulhamid-omeiza-usman/" target="_blank" rel="noopener noreferrer">
                         
-                        <img class="handle-logo" src="assets/svg/linkedin.svg" alt="">
+                        <img class="handle-logo" src="{% static 'svg/linkedin.svg' %}" alt="">
                     </a>
                     <a href="mailto:abdulhamidusman218@gmail.com">
-                        <img class="handle-logo" src="assets/svg/gmail.svg" alt="">
+                        <img class="handle-logo" src="{% static 'svg/gmail.svg' %}" alt="">
                     </a>
 
                     <a href="https://instagram.com/codesaint_?igshid=aDdzNHFiNDVja2Fo" target="_blank">
-                        <img class="handle-logo" src="assets/svg/instagram (1).svg" alt="">
+                        <img class="handle-logo" src="{% static 'svg/instagram (1).svg' %}" alt="">
                     </a>
-                    <img class="handle-logo" src="assets/svg/twitter.svg" alt="">
+                    <img class="handle-logo" src="{% static 'svg/twitter.svg' %}" alt="">
                     
                     <span class="fab icon-gmail fa-2x"></span>
                 </div>
