@@ -399,9 +399,6 @@ section{
     color: var(--color-secondary)
 }
 
-.achievement{
-    width: 90%
-    }
 .organization{
     margin-left: 25px;
     font-weight: 900;

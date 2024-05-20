@@ -15,7 +15,7 @@
  
  <div class="nav"> 
 
-        <h2 class="name"><span class="text-gradient" >CodeSaint </span></h2>
+        <h2 class="name"><span class="text-gradient" >Shura</span></h2>
  
         <div class="navs"> 
   
@@ -30,8 +30,7 @@
             <a href="#home">HOME</a>
             <a href="#story">MY STORY</a>
             <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a> 
-            <a href="#blogposts">BLOGPOSTS</a> 
+            <a href="#projects">RESUME</a>
             <a href="#contacts">CONTACTS</a>
       
         </div>
@@ -44,28 +43,12 @@
             </div> 
             <div class="main-text"><span class="text-gradient">Abdulhamid Usman</span></div>
             <div class="aftertext">
-                I am a self-taught Web Developer with about 2 years of experience specialized in
+                I am a self-taught Web Developer with 3 years of experience specialized in
                 <span class="text-gradient">Backend development</span>
             </div>
         </div> 
  
         </div>
-
-        <!--<div class="intro">
-            <div class="intro-texts">
-                <h3 class="pretext">
-                    Hello world, I am
-                </h3> 
-                <h1 class="main-text"><span class="text-gradient">Abdulhamid Usman</span></h1>
-                <h3 class="aftertext">
-                    I am a self-taught Web Developer with about 2 years of experience specialized in
-                    <span class="text-gradient">Backend development</span>
-                </h3>
-            </div> 
-
-            
-            
-        </div>-->
     </section>
 
 
@@ -79,7 +62,7 @@
 
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <img class="dokeibi" src="{% static 'images/dokeibi.png' %}" alt="">
-                <p style="margin-top: -20px; font-size: 18px; text-align: center;"><i>"Slit will sit on you chest like silicon"</i></p>
+                <p style="margin-top: -20px; font-size: 18px; text-align: center;"><i></i></p>
             </div>
    
 
@@ -91,9 +74,9 @@
                         Committed to continuous improvement, I actively engage with fellow developers, staying abreast of industry trends and refining my skills. Outside the digital realm, I enjoy strategic chess games, rejuvenating walks, and the harmonies of diverse music genres. I'm currently expanding my horizons by learning a new language.
 
                     </P>
-                    <p>I am an adept web developer that utilizes Python and Django for backend development. Actively broadening my skill set, I am currently learning JavaScript to enhance my proficiency in front-end development in an attempt to apply this dual proficiency to effectively contribute to larger projects.</p>
+                    <p>I am an adept Python developer that utilizes Django for backend development. Actively broadening my skill set, I am currently learning web scraping and automation with scrapy and selenium.</p>
                     <p>
-                        I'm eager to contribute my expertise and collaborate on impactful web development projects. Let's connect and explore the possibilities!</p>
+                        I'm eager to contribute my expertise and collaborate on impactful projects. Let's connect and explore the possibilities!</p>
             </div>
         </div>
     </section>
@@ -122,13 +105,15 @@
     <section class="experience">
         <div class="heading">Work experience</div>
         <div style="display: flex; flex-wrap:wrap; margin: 0 25px">
+            {% for e in experience %}
             <div class="experience-container">
-                <h4 class="position">Backend Engineer</h4>
-                <h5 class="organization">Pistis Solutions | Nov 2023-Present</h5>
+                <h4 class="position">{{e.job}}</h4>
+                <h5 class="organization">{{e.orgaizationm}} | {{e.start}} - {{e.end}}</h5>
                 <ul>
-                    <li class="achievement">Engineered multiple endpoints for the website.</li>
+                    <li class="achievement">{{e.description}}</li>
                 </ul>
             </div>
+            {% endfor %}
         </div>
 
     </section>
@@ -143,7 +128,7 @@
         <div class="contact-container">
 
             <form action=""> 
-                <h3>Message me :)</h3>
+                <h3>Email me :)</h3>
                 <input type="text" class="mail" name="" id="" placeholder="Your Email">
                 <input type="text" name="" id="" placeholder="Title">
                 <textarea name="" id="" cols="" rows="20" placeholder="Null bound I can limit infinity"></textarea>
@@ -151,7 +136,7 @@
             </form>
     
             <div class="handles">
-                <h4 class="heading" style="font-size: 19;">My Socials</h4>
+                <h4 class="heading" style="font-size: 19;">Where To Find Me</h4>
                 <div class="socials">
                     
                     <a href="http://github.com/Hamidusman" target="_blank" rel="noopener noreferrer">
@@ -164,12 +149,6 @@
                     <a href="mailto:abdulhamidusman218@gmail.com">
                         <img class="handle-logo" src="{% static 'svg/gmail.svg' %}" alt="">
                     </a>
-
-                    <a href="https://instagram.com/codesaint_?igshid=aDdzNHFiNDVja2Fo" target="_blank">
-                        <img class="handle-logo" src="{% static 'svg/instagram (1).svg' %}" alt="">
-                    </a>
-                    <img class="handle-logo" src="{% static 'svg/twitter.svg' %}" alt="">
-                    
                     <span class="fab icon-gmail fa-2x"></span>
                 </div>
             </div>

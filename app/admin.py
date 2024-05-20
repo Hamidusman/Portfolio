@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import TechStack, Work
+from .models import TechStack, Experience
 # Register your models here.
 admin.site.register(TechStack)
-admin.site.register(Work)
+admin.site.register(Experience)
