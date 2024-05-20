@@ -448,7 +448,7 @@ section{
     display: flex;
     flex-direction: column; 
     justify-content: spa;
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
     border-radius: 10px;
     margin: 30px
 }
