@@ -384,8 +384,7 @@ section{
 /* PROJECTS */
 
 
-.project-cards{
-    margin: 45 65px;
+.project-cards{ 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -396,6 +395,7 @@ section{
     margin-bottom: 25px;
     height: 280px;
     background-color: var(--color-tertiary);
+    margin: 40px 40px;
     border-radius: 10px; 
     
     color:rgb(177, 177, 177)
@@ -444,7 +444,10 @@ section{
 .experience-container{
 
     margin-bottom: 20px;
-    max-width: 280;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 .position{
@@ -468,10 +471,10 @@ section{
 }
 
 .achievements{
-    width: 30px
+    
 }
 .experience-container ul{
-    width:100%;
+    ;
     flex-wrap: wrap
 }
 .blog{
