@@ -1,8 +1,8 @@
 body, section{
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0; 
     color: white;
+    background-color: var(--color-primary);
     scroll-behavior: smooth; 
 
 }
@@ -25,13 +25,17 @@ section{
     margin: 0
 }
 :root{
-    --color-primary: #081020;
+    --color-primary: #080808;
     --color-secondary: #d0a003;
-    --color-tertiary: #161d2a
+    --color-tertiary: #131313
 }
 
 
 
+main{
+    margin: 0 200px
+}
+ 
 /* NAV */
 .dropdown-btn {
     padding: 10px;
@@ -67,15 +71,20 @@ section{
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
-nav{
-    top: 0;
-    left: 0;
+
+  nav{
     display: flex;
-    justify-content: space-between;
-    position: fixed;
+    justify-content: center;
+    height: fit-content;
     align-items: center;
-    width: 100%;
-    padding: 5px;
+    margin-top: 70px;
+  }
+.navs{ 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center; 
+    height: 60px; 
     z-index: 10000;
     transition: 0.6s;
     margin: 0
@@ -90,8 +99,6 @@ nav{
 
 
 
-
- 
 @media (max-width: 480px){
     .time{
         font-size: 18
@@ -102,7 +109,7 @@ nav{
 } 
 
 .navs a{
-    margin-right: 25px;
+    margin: 0 15px;
     position: relative;
 }
 .navs a:hover{ 
@@ -112,18 +119,14 @@ nav{
     color: transparent;
     transition: .4s;
 }
+ 
 
-.navs{ 
-    display: flex;
-    
-
-}
-
-nav.sticky
-{   
-    padding: 0px 5px;
+.navs.sticky
+{    
     background-color: var(--color-tertiary);
-    transition: .9s
+    transition: .3s;
+    border-radius: 70px;
+    padding: 10px
     
 }
 
@@ -169,10 +172,11 @@ nav.sticky .name{
 /* HERO */
 .index{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--color-primary); 
     display: flex; 
     align-items: center;
+    justify-content: center;
 
 } 
 
@@ -182,7 +186,8 @@ nav.sticky .name{
 
 }
 .intro{ 
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    text-align: center
 }
 .pretext, .main-text, .aftertext{
     
@@ -193,12 +198,12 @@ nav.sticky .name{
     animation: fade-right .4s;  
 
 }
-.main-text{
+.main-text{ 
     font-size: 45px; 
     color: var(--color-secondary);
-    animation: fade-right .8s;
-    margin-top: -10px; 
+    animation: fade-right .8s;  
 }
+
 .aftertext{
     width: 550px;
     margin-bottom: 30px;  
@@ -238,18 +243,6 @@ nav.sticky .name{
     text-decoration: none;
     border-radius: 10px;
     color: white;
-}
-
-.hire:hover{
-    background-color: #b58a00;
-}
-.glitch-wrapper{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
 }
 .text-gradient {
 
@@ -304,8 +297,7 @@ nav.sticky .name{
 .about-text{  
     width: 35%; 
     display: flex;
-    flex-direction: column; 
-    margin-bottom: 15px;
+    flex-direction: column;  
     font-size: 18;
     letter-spacing: 0.05mm;
 }
@@ -318,7 +310,13 @@ nav.sticky .name{
 }
 
 .dokeibi{
-    width: 340px
+    width: 340px; 
+    border-radius: 50%;
+}
+
+.dokeibi:hover{
+    box-shadow: 0 0 30px var(--color-secondary);
+    transition: .5s;
 }
 
 @media (max-width: 1024px){
@@ -356,28 +354,32 @@ nav.sticky .name{
 
 }
  
-.skill-cards{
-    margin: 45 65px;
+.skill-cards{ 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     height: auto;
 }
-.skill-card{
+.skill{
     width:440px;
-    margin-bottom: 25px;
-    height: 280px;
+    margin-bottom: 25px;  
+    height: 280px; 
     background-color: var(--color-tertiary);
     border-radius: 10px; 
     
     color:rgb(177, 177, 177)
 }
 
-.skill-card:hover{
+.skill:hover{
     background-color: rgb(183, 142, 8);
     
     color:white;
     transition: 0.7s
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 .skill-content  { 
     margin: 0 20px;
@@ -407,8 +409,8 @@ nav.sticky .name{
 
 .project-cards{ 
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap; 
     height: auto;
 }
 .project-card{
@@ -416,7 +418,7 @@ nav.sticky .name{
     margin-bottom: 25px;
     height: 280px;
     background-color: var(--color-tertiary);
-    margin: 40px 40px;
+    margin: 40px 65px;
     border-radius: 10px; 
     
     color:rgb(177, 177, 177)

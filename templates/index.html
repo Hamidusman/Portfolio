@@ -14,18 +14,8 @@
 
  
 <nav> 
-
-        <h2 class="name"><span class="text-gradient" >Shura</span></h2>
  
-        <div class="navs"> 
-  
-               
-            <div class="dropdown-content" id="myDropdown">
-              <a href="#">Item 1</a>
-              <a href="#">Item 2</a>
-              <a href="#">Item 3</a>
-            </div> 
-            
+        <div class="navs">  
 
             <a href="#home">HOME</a>
             <a href="#story">MY STORY</a>
@@ -34,22 +24,23 @@
             <a href="#contacts">CONTACTS</a>
       
         </div>
-</nav>
-
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 40);
-            
-        });
-    </script>
+</nav>    
+<script type="text/javascript">
+    window.addEventListener("scroll",function(){
+        var nav = document.querySelector(".navs");
+        nav.classList.toggle("sticky", window.scrollY > 40);
+        
+    });
+</script>
+<main>
+        
     <section class="index">
                 
         <div class="intro">
             <div class="pretext">
                 Hello world, I am
             </div> 
-            <div class="main-text"><span class="text-gradient">Abdulhamid Usman</span></div>
+            <div class="main-text" data-text="Abdulhamid Usman">Abdulhamid Usman</div>
             <div class="aftertext">
                 I am a self-taught Web Developer with 3 years of experience specialized in
                 <span class="text-gradient">Backend development</span>
@@ -69,7 +60,7 @@
         <div class="story-container">
 
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img class="dokeibi" src="{% static 'images/dokeibi.png' %}" alt="">
+                <img id="dokeibi" class="dokeibi" src="{% static 'images/dokeibi.png' %}" alt="">
                 <p style="margin-top: -20px; font-size: 18px; text-align: center;"><i></i></p>
             </div>
    
@@ -97,7 +88,7 @@
         <div class="skill-cards">
                 
             {% for stack in techstack %}
-            <div class="skill-card">
+            <div class="skill">
                 <div class="skill-content">
                     <img class="skill-img" src="{{ stack.icon.url }}">
                     <h3 class="skill-title">{{stack.title}}</h3>
@@ -286,6 +277,7 @@
       </section>
 
 
+    </main>
 </body>
 
 </html>
