@@ -1,7 +1,6 @@
 body, section{
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0; 
     color: white;
     background-color: var(--color-primary);
     scroll-behavior: smooth; 
@@ -33,6 +32,10 @@ section{
 
 
 
+main{
+    margin: 0 200px
+}
+ 
 /* NAV */
 .dropdown-btn {
     padding: 10px;
@@ -68,6 +71,7 @@ section{
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
+<<<<<<< HEAD
 .nav{ 
     display: flex;
     justify-content: center;
@@ -79,6 +83,22 @@ section{
     justify-content: center;
     align-items: center;
     padding: 5px;
+=======
+
+  nav{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    margin-top: 70px;
+  }
+.navs{ 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center; 
+    height: 60px; 
+>>>>>>> c9bdac7a72b4a7dd7dc0db09351f6b5d59f69e80
     z-index: 10000;
     transition: 0.6s;
     height: 70px;
@@ -93,8 +113,12 @@ section{
 }
 
 
+<<<<<<< HEAD
  
  
+=======
+
+>>>>>>> c9bdac7a72b4a7dd7dc0db09351f6b5d59f69e80
 @media (max-width: 480px){
     .time{
         font-size: 18
@@ -120,11 +144,19 @@ section{
  
 
 .navs.sticky
+<<<<<<< HEAD
 {   
     padding: 0px 5px;
     background-color: var(--color-tertiary);
     transition: .3s;
     border-radius: 70px;
+=======
+{    
+    background-color: var(--color-tertiary);
+    transition: .3s;
+    border-radius: 70px;
+    padding: 10px
+>>>>>>> c9bdac7a72b4a7dd7dc0db09351f6b5d59f69e80
     
 }
 
