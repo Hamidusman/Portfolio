@@ -31,10 +31,7 @@ section{
 }
 
 
-
-main{
-    margin: 0 200px
-}
+ 
  
 /* NAV */
 .dropdown-btn {
@@ -71,11 +68,12 @@ main{
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
-<<<<<<< HEAD
-.nav{ 
+  
+nav{  
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    height: auto;
   }
 .navs{ 
     display: flex; 
@@ -83,26 +81,11 @@ main{
     justify-content: center;
     align-items: center;
     padding: 5px;
-=======
-
-  nav{
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    align-items: center;
-    margin-top: 70px;
-  }
-.navs{ 
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    align-items: center; 
-    height: 60px; 
->>>>>>> c9bdac7a72b4a7dd7dc0db09351f6b5d59f69e80
     z-index: 10000;
     transition: 0.6s;
     height: 70px;
-    margin-top: 25
+    margin-top: 25px;
+    width: auto
     
 
 }
@@ -113,12 +96,6 @@ main{
 }
 
 
-<<<<<<< HEAD
- 
- 
-=======
-
->>>>>>> c9bdac7a72b4a7dd7dc0db09351f6b5d59f69e80
 @media (max-width: 480px){
     .time{
         font-size: 18
@@ -144,19 +121,11 @@ main{
  
 
 .navs.sticky
-<<<<<<< HEAD
 {   
     padding: 0px 5px;
     background-color: var(--color-tertiary);
     transition: .3s;
     border-radius: 70px;
-=======
-{    
-    background-color: var(--color-tertiary);
-    transition: .3s;
-    border-radius: 70px;
-    padding: 10px
->>>>>>> c9bdac7a72b4a7dd7dc0db09351f6b5d59f69e80
     
 }
 
@@ -374,8 +343,9 @@ nav.sticky .name{
     text-decoration: underline var(--color-secondary) solid;
     text-underline-offset: 30%;
     display: flex;
-    justify-content: center; 
-    margin: 60px 0;
+    justify-content: center;  
+    padding: 50px 0;
+
     text-align: center;
     font-size: 27; 
 }
@@ -436,6 +406,9 @@ nav.sticky .name{
 
 /* PROJECTS */
 
+.projects{
+    width: 100%;
+}
 
 .project-cards{ 
     display: flex;
@@ -448,7 +421,7 @@ nav.sticky .name{
     margin-bottom: 25px;
     height: 280px;
     background-color: var(--color-tertiary);
-    margin: 40px 65px;
+    margin: 40px 0px;
     border-radius: 10px; 
     
     color:rgb(177, 177, 177)
