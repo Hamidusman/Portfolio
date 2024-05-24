@@ -67,21 +67,25 @@ section{
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
-.nav{
-    height: 80px;
-    display: flex;   
-    background-color: var(--color-primary);
+nav{
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     position: fixed;
     align-items: center;
-    width: 100vw;
-    z-index: 2;
+    width: 100%;
+    padding: 5px;
+    z-index: 10000;
+    transition: 0.6s;
+    margin: 0
     
 
 }
 .name{
-    margin-left: 15px
+    margin-left: 15px;
+    position: relative;
+    font-size: 30;
 }
 
 
@@ -96,6 +100,11 @@ section{
 .c{
     margin-right: 20px;
 } 
+
+.navs a{
+    margin-right: 25px;
+    position: relative;
+}
 .navs a:hover{ 
     background: linear-gradient(to right, var(--color-secondary), #ff6600); 
     -webkit-background-clip: text;
@@ -104,10 +113,22 @@ section{
     transition: .4s;
 }
 
-.navs{
+.navs{ 
     display: flex;
-    gap: 30px;
-    margin-right: 25px;
+    
+
+}
+
+nav.sticky
+{   
+    padding: 0px 5px;
+    background-color: var(--color-tertiary);
+    transition: .9s
+    
+}
+
+nav.sticky .name{
+    font-size: 23px;
 }
 /* NAV END */
 
@@ -144,7 +165,7 @@ section{
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
-}
+} 
 /* HERO */
 .index{
     height: 100vh;
