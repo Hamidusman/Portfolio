@@ -284,13 +284,14 @@ nav{
 
 /* SKILLS */
 
-.tech{
+.skill{
     padding: 6px 5;
     height: fit-content;
     width: fit-content;
     background-color: #2a2a2a;
-    margin: 5px;
+    margin-right: 7px;
     border-radius: 3px;
+    font-size: 14px;
 }
 .skills{
     width: 100%;
@@ -302,6 +303,7 @@ nav{
     text-underline-offset: 30%;
     display: flex; 
     padding: 50px 0;
+    color: whitesmoke;
  
     font-size: 20;
     margin-top: 30px;
@@ -312,39 +314,8 @@ nav{
     display: flex; 
     flex-wrap: wrap;
     height: auto;
-}
-.skill{
-    width:440px;
-    margin-bottom: 25px;  
-    height: 280px; 
-    background-color: var(--color-tertiary);
-    border-radius: 10px; 
-    
-    color:rgb(177, 177, 177)
-}
+} 
 
-.skill:hover{
-    background-color: rgb(183, 142, 8);
-    
-    color:white;
-    transition: 0.7s
-}
- 
-.skill-content:hover{
-    margin-top: 5px;
-    transition: .5s ;
-    color: white;
-}
-
-.skill-des{
-    margin-top: 20px; 
-}
-
-.skill-img{
-    width: 45px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
 
 
 /* PROJECTS */
@@ -433,7 +404,21 @@ nav{
 }
 
 
+.work-info{ 
 
+}
+
+.timeline{
+    width: 380px
+}
+.organisation, .position{
+    color: whitesmoke
+}
+
+.job-des{
+    margin-right: 10px;
+    font-size: ;
+}
 @media (max-width: 1024px) {
     .about .title{
         font-size: 40

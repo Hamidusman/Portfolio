@@ -60,11 +60,11 @@
         <h1 class="heading container">About</h1>
 
         <div class="story-container container">
-
+<!--
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img id="dokeibi" class="dokeibi" src="{% static 'images/dokeibi.png' %}" alt="">
-                <p style="margin-top: -20px; font-size: 18px; text-align: center;"><i></i></p>
+                <img id="dokeibi" class="dokeibi" src="{% static 'images/dokeibi.png' %}" alt=""> 
             </div>
+        -->
    
 
             <div class="about-text">
@@ -90,7 +90,7 @@
  
         <div class="skill-cards container">
             {% for t in techstack %}
-            <div class="tech">{{t.title}}</div>
+            <div class="skill">{{t.title}}</div>
             {% endfor %}
                 
         </div>
@@ -173,6 +173,19 @@
 
     <!-- Work experience-->
     <section class="experience" id="resume">
+        <div class="heading container">Experience</div>
+
+        <div class="experience-container d-flex container">
+            <div class="timeline">March 2023 - June, 2024</div>
+            <div class="work-info d-flex flex-column">
+                <p class="organisation">Pistis TechHub</p>
+                <p class="position">Backend Developer</p>
+
+                <p class="job-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatibus sapiente nobis et accusamus, quisquam cum maxime illo? Dolorem, perspiciatis ipsum saepe sequi incidunt exercitationem maiores quasi architecto sapiente voluptas.</p>
+                
+            </div>
+        </div>
+
     </section>
 
   <!--PROJECT SECTION -->
