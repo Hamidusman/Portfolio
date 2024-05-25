@@ -13,7 +13,7 @@ body, section{
     scroll-behavior: smooth;
 }
 a{
-    text-decoration:dashed;
+    text-decoration: none;
     color: white;
 }
   
@@ -47,11 +47,10 @@ nav{
     display: flex; 
     position: fixed; 
     justify-content: center;
-    align-items: center;
-    padding: 5px;
+    align-items: center; 
     z-index: 10000;
     transition: 0.6s;
-    height: 70px;
+    height: 90px;
     margin-top: 10px;
     width: auto
     
@@ -94,11 +93,8 @@ nav{
     background-color: var(--tertiary);
     transition: .3s;
     border-radius: 70px;
+    height: 70px;
     
-}
-
-nav.sticky .name{
-    font-size: 23px;
 }
 /* NAV END */
 
@@ -147,11 +143,7 @@ nav.sticky .name{
 
 } 
 
-
-.{ 
-    display: flex; 
-
-}
+ 
 .intro{ 
     flex-wrap: wrap;  
     text-align: center;
@@ -369,48 +361,68 @@ nav.sticky .name{
     height: auto;
 }
 .project-card{
-    width: 620;
-    margin-bottom: 25px;
-    height: 190px;
-    background-color: var(--dark);
+    width: 620px;
+    display: flex;
+    flex-direction: column;
     margin: 5px;
-    border-radius: 10px; 
+    height: 230px;
+    background-color: var(--dark); 
+    border-radius: 5px; 
     padding: 10 0;
     
-    color:rgb(177, 177, 177)
+    color:rgb(177, 177, 177);
 }
 
 .project-card:hover{
-    border: 1px solid ;
-    
-    color:white;
-    transition: 1.2s
+    border: 1px solid var(--grey);
+     
+    transition: .5s
 }
-.project-content  { 
-    margin: 0 20px;
+.project-content  {  
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column;  
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
     
 }
 
-.project-content:hover{
-    margin-bottom: 5px;
-    transition: .5s ;
-    color: white;
+.project-content:hover{ 
+    transition: .5s ; 
 
 }
 
-.project-des{
-    margin-top: 20px; 
+.project-title{
+    font-weight: 500;
+    font-size: 21px;
+    margin: 10px;
+    color: whitesmoke;
+    ;
+}
+ 
+
+.project-links{ 
+}
+
+.github, .website{
+    
+    text-decoration: none;
+    color: var(--grey);
+    margin: 0 3px
+}
+
+.project-link-wrapper {
+    color: unset;
+    text-decoration: unset;
+    cursor: pointer;
+}
+.project-link-wrapper:hover {
+    color: unset;
+    text-decoration: unset;
 }
 
 
-.project-links{
-    display: flex;
-    justify-content: space-between;
-}
 
 /* PROJECT END */
 
@@ -420,128 +432,6 @@ nav.sticky .name{
     background-color: var(--color-primary);
 }
 
-.experience-container{
-
-    margin-bottom: 20px;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}
-.position{
-    margin-left: 15;
-    font-size: 23px;
-    color: var(--color-secondary)
-}
-
-.organization{
-    margin-left: 25px;
-    font-weight: 900;
-    font-size: 19;
-
-
-}
-
-.li{
-    width: 150px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.achievements{
-    
-}
-.experience-container ul{
-    ;
-    flex-wrap: wrap
-}
-.blog{
-    width: 100%;
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.card-texts{
-    margin-top: -10;
-    margin-left: 3px;
-    display: flex;
-}
-.card{
-    margin-top: 30px;
-    margin-left: px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.card-content{
-    width: 280px;
-    height: 370;
-    display: flex;
-    flex-direction: column; 
-    justify-content: spa;
-    background-color: var(--color-tertiary);
-    border-radius: 10px;
-    margin: 30px
-}
-
-.card-content:hover{
-    background-color: var(--color-secondary);
-    transition: .8s;
-}
-@media (max-width:1024px) {
-    .card-content{
-        width: 160px
-    }
-    
-}
-.card-texts{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 10;
-    height: 100%;
-}
-
- 
-.card-img{
-    width: 100%; 
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.card-title{
-    margin-left: 1px;
-    margin-top: 10px;
-    font-size: 19px
-}
-
-.card-description{
-    color: rgb(87, 87, 87);
-    margin-top: 5px;
-    margin-left: 3px; 
-}
-
-.date{
-    margin-top: 10px;
-    margin-left: 3;
-}
-
-
-.blogposts{ 
-    margin: 0 65px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    height: auto;
-}
 
 
 @media (max-width: 1024px) {
