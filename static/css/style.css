@@ -85,7 +85,7 @@ nav{
     z-index: 10000;
     transition: 0.6s;
     height: 70px;
-    margin-top: 25px;
+    margin-top: 30px;
     width: auto
     
 
@@ -186,7 +186,7 @@ nav.sticky .name{
 }
 .intro{ 
     flex-wrap: wrap; 
-    margin-top: 120px;
+    margin-top: 80px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -211,6 +211,7 @@ nav.sticky .name{
 .description{
     font-size: 15;
     animation: fade-left 3s;
+    letter-spacing: 0.25mm;
 }
 @media (max-width: 1024px){
     .navs a{
@@ -297,8 +298,8 @@ nav.sticky .name{
     width: 35%; 
     display: flex;
     flex-direction: column;  
-    font-size: 18;
-    letter-spacing: 0.05mm;
+    font-size: 15;
+    letter-spacing: 0.25mm;
 }
 
 
