@@ -1,8 +1,7 @@
 body, section{
     margin: 0;
     padding: 0; 
-    color: white;
-    background-color: var(--color-primary);
+    color: var(--grey); 
     overflow-x: hidden;
     scroll-behavior: smooth; 
 
@@ -26,9 +25,11 @@ section{
     margin: 0
 }
 :root{
-    --color-primary: #080808;
-    --color-secondary: #d0a003;
-    --color-tertiary: #131313
+    --color-primary: #131313;
+    --color-secondary: #d0a003; 
+    --tertiary: #212121;
+    --grey: #bbbbbb;
+    --dark:  #343434
 }
 
 
@@ -51,7 +52,7 @@ nav{
     z-index: 10000;
     transition: 0.6s;
     height: 70px;
-    margin-top: 30px;
+    margin-top: 10px;
     width: auto
     
 
@@ -90,7 +91,7 @@ nav{
 .navs.sticky
 {   
     padding: 0px 5px;
-    background-color: var(--color-tertiary);
+    background-color: var(--tertiary);
     transition: .3s;
     border-radius: 70px;
     
@@ -142,6 +143,7 @@ nav.sticky .name{
     background-color: var(--color-primary); 
     display: flex;  
     justify-content: center;
+    align-items: center;
 
 } 
 
@@ -151,8 +153,7 @@ nav.sticky .name{
 
 }
 .intro{ 
-    flex-wrap: wrap; 
-    margin-top: 80px;
+    flex-wrap: wrap;  
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -245,7 +246,7 @@ nav.sticky .name{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    background-color: var(--color-tertiary);
+    background-color: var(--color-primary);
     height: auto
 
 } 
@@ -307,12 +308,11 @@ nav.sticky .name{
 .heading{
     text-decoration: underline var(--color-secondary) solid;
     text-underline-offset: 30%;
-    display: flex;
-    justify-content: center;  
+    display: flex; 
     padding: 50px 0;
-
-    text-align: center;
-    font-size: 27; 
+ 
+    font-size: 20;
+    margin-top: 30px;
 }
  
  
@@ -359,30 +359,32 @@ nav.sticky .name{
 
 .projects{
     width: 100%;
+    background-color: var(--color-primary);
 }
 
 .project-cards{ 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap; 
     height: auto;
 }
 .project-card{
-    width:260px;
+    width: 620;
     margin-bottom: 25px;
-    height: 280px;
-    background-color: var(--color-tertiary);
-    margin: 40px 0px;
+    height: 190px;
+    background-color: var(--dark);
+    margin: 5px;
     border-radius: 10px; 
+    padding: 10 0;
     
     color:rgb(177, 177, 177)
 }
 
 .project-card:hover{
-    background-color: rgb(183, 142, 8);
+    border: 1px solid ;
     
     color:white;
-    transition: 0.7s
+    transition: 1.2s
 }
 .project-content  { 
     margin: 0 20px;
@@ -394,7 +396,7 @@ nav.sticky .name{
 }
 
 .project-content:hover{
-    margin-top: 5px;
+    margin-bottom: 5px;
     transition: .5s ;
     color: white;
 
@@ -415,7 +417,7 @@ nav.sticky .name{
 .experience{
 
     height: 70vh;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-primary);
 }
 
 .experience-container{

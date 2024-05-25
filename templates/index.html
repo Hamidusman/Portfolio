@@ -46,7 +46,7 @@
             <div class="aftertext container"> 
                 <span class="text-gradient">A Digital Sorcerer</span>
             </div>
-            <p class="description">Passionate about creating effective and robust technologies</p>
+            <p class="description">Passionate about developing effecient and robust technologies</p>
         </div> 
  
         </div>
@@ -57,7 +57,7 @@
 
     
     <section class="about " id="story">
-        <h1 class="heading">My Story</h1>
+        <h1 class="heading container">About</h1>
 
         <div class="story-container container">
 
@@ -84,67 +84,26 @@
     
     
     <section class="skills" id="skills">
-        <h1 class="heading">My Skills</h1>
+        <h1 class="heading container">Skillset</h1>
 
 
  
         <div class="skill-cards container">
-            <div class="tech">Python </div>
-            <div class="tech">Python </div>
-            <div class="tech">Python </div>
+            {% for t in techstack %}
+            <div class="tech">{{t.title}}</div>
+            {% endfor %}
                 
         </div>
     </section>
     
     
     <section class="projects" id="projects">
-        <h1 class="heading">My Skills</h1>
+        <h1 class="heading container">Projects</h1>
 
  
         <div class="project-cards container">
                 
-            
-            <div class="project-card">
-                <div class="project-content">
-                    
-                    <h1 class="project-title">venom</h1>
-                    <p class="project-des">Simple web scraper</p>
-                    <h5 class="project stack">Python, Scrapy selenium</h5>
-                    <div class="project-links">
-                        <a href="" target="_blank" class="github">Github</a>
-                        <a href="" target="_blank" class="website">Website</a>
-                    </div>
-                </div> 
            
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    
-                    <h1 class="project-title">venom</h1>
-                    <p class="project-des">Simple web scraper</p>
-                    <h5 class="project stack">Python, Scrapy selenium</h5>
-                    <div class="project-links">
-                        <a href="" target="_blank" class="github">Github</a>
-                        <a href="" target="_blank" class="website">Website</a>
-                    </div>
-                </div> 
-           
-            </div>
-            
-            <div class="project-card">
-                <div class="project-content">
-                    
-                    <h1 class="project-title">venom</h1>
-                    <p class="project-des">Simple web scraper</p>
-                    <h5 class="project stack">Python, Scrapy selenium</h5>
-                    <div class="project-links">
-                        <a href="" target="_blank" class="github">Github</a>
-                        <a href="" target="_blank" class="website">Website</a>
-                    </div>
-                </div> 
-           
-            </div>
             
             <div class="project-card">
                 <div class="project-content">
@@ -207,7 +166,7 @@
 
     <!-- Work experience-->
     <section class="experience" id="resume">
-        <div class="heading">My Resume</div>
+        <div class="heading container">My Resume</div>
         <div style="display: flex; flex-wrap:wrap; margin: 0 25px">
             {% for e in experience %}
             <div class="experience-container">
