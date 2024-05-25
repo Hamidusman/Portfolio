@@ -3,6 +3,7 @@ body, section{
     padding: 0; 
     color: white;
     background-color: var(--color-primary);
+    overflow-x: hidden;
     scroll-behavior: smooth; 
 
 }
@@ -173,8 +174,7 @@ nav.sticky .name{
     height: 100vh;
     width: 100%;
     background-color: var(--color-primary); 
-    display: flex; 
-    align-items: center;
+    display: flex;  
     justify-content: center;
 
 } 
@@ -186,31 +186,31 @@ nav.sticky .name{
 }
 .intro{ 
     flex-wrap: wrap; 
-    text-align: center
+    margin-top: 120px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .pretext, .main-text, .aftertext{
-    
-    margin-left: 25px;
+    font-size: 68;
     flex-wrap: wrap;
 }
 .pretext{ 
     animation: fade-right .4s;  
 
 }
-.main-text{ 
-    font-size: 45px; 
+.main-text{  
     color: var(--color-secondary);
-    animation: fade-right .8s;  
+    animation: fade-right 1s;  
 }
 
 .aftertext{
     width: 550px;
     margin-bottom: 30px;  
-    animation:  fade-right 1.2s;
-    font-size:  17;
+    animation:  fade-right 2s; 
 }
-.home-img{
-    width: 420px;
+.description{
+    font-size: 15;
+    animation: fade-left 3s;
 }
 @media (max-width: 1024px){
     .navs a{
