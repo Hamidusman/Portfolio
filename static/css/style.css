@@ -29,7 +29,7 @@ section{
 :root{
     --color-primary: #131313;
     --color-secondary: #d0a003; 
-    --tertiary: #212121;
+    --tertiary: #242424;
     --grey: #bbbbbb;
     --dark:  #343434
 }
@@ -344,12 +344,12 @@ nav{
     height: auto;
 }
 .project-card{
-    width: 620px;
+    width: 580px;
     display: flex;
     flex-direction: column;
     margin: 5px;
     height: 230px;
-    background-color: var(--dark); 
+    background-color: var(--tertiary); 
     border-radius: 5px; 
     padding: 10 0;
     
@@ -363,6 +363,7 @@ nav{
 }
 .project-content  {  
     height: 100%;
+    
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -379,11 +380,26 @@ nav{
 .project-title{
     font-weight: 500;
     font-size: 21px;
-    margin: 10px;
     color: whitesmoke;
     ;
 }
- 
+
+.project-stack{
+    font-size: 16;
+}
+
+@media(max-width: 640px){
+    .project-stack{
+        font-size: 14px
+    }
+}
+
+.project-stack, .project-title, .project-links{
+    margin: 10px
+
+}
+
+
 
 .project-links-wrapper{ 
     height: 100%;
@@ -396,6 +412,18 @@ nav{
     margin: 0 3px
 }
 
+.project-link{
+    width: 16px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .project-link{
+        margin: 0px 5px
+    }
+
+}
 .project-link-wrapper {
     color: unset;
     text-decoration: unset;
@@ -437,7 +465,8 @@ nav{
 }
 
 .timeline{
-    width: 380px
+    width: 380px;
+    
 }
 .organisation, .position{
     color: whitesmoke
