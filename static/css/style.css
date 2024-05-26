@@ -84,7 +84,10 @@ nav{
 .navs.sticky
 {   
     padding: 5px 15px;
-    background-color: var(--tertiary);
+    border: 1px solid var(--grey);
+    background: rgba(189, 183, 183, 0.3);
+    box-shadow: 0 40x 30px #212121, 0.3; 
+    backdrop-filter: blur(10px);
     transition: .3s;
     border-radius: 70px;
     height: 60px;
@@ -102,7 +105,7 @@ nav{
     
 }
 
-@media(max-width: 420px){
+@media(max-width: 480px){
     .navs a{
         margin: 0 5px;
     }
