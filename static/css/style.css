@@ -3,7 +3,9 @@ body, section{
     padding: 0; 
     color: var(--grey); 
     overflow-x: hidden;
-    scroll-behavior: smooth; 
+    font-size: 14;
+    scroll-behavior: smooth;
+    letter-spacing: 0.25mm;
 
 }
 
@@ -148,10 +150,11 @@ nav{
 } 
 /* HERO */
 .index{
-    height: 100vh;
+    height: 650px;
     width: 100%;
     background-color: var(--color-primary); 
     display: flex;  
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -161,42 +164,48 @@ nav{
 .intro{ 
     flex-wrap: wrap;  
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 .pretext, .main-text, .aftertext{
-    font-size: 68;
+    font-size: 75;
     flex-wrap: wrap;
 }
 .pretext{ 
     animation: fade-right .4s;  
 
-}
-.main-text{  
-    color: var(--color-secondary);
-    animation: fade-right 1s;  
-}
-
+} 
 .aftertext{
     width: 550px;
     margin-bottom: 30px;  
     animation:  fade-right 2s; 
 }
+
+@media(max-width: 1024px){
+    .pretext, .main-text{
+        font-size: 55;
+    }
+}
+
+
 .description{
-    font-size: 15;
+    font-size: 20;
     animation: fade-left 3s;
     letter-spacing: 0.25mm;
 } 
 
 @media (max-width: 900px){
 
-    .home-text{ 
-    }
-    .home-img{
-        display: none;
-    }
-    .aftertext{ 
-        font-size: 18; 
+    .aftertext{  
         width: 90%
+    }
+    .description{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:900px){
+    .pretext, .aftertext{
+        font-size: 45px;
     }
 }
 .text-gradient {
@@ -277,13 +286,9 @@ nav{
     .dokeibi{
         width: 320px
     }
-    .story-container{
-        margin: 30px;
+    .story-container{ 
         flex-direction: column;
-    }
-    .about-text{ 
-        width: 95%; 
-    }
+    } 
 }
 
 /* END OF ABOUT */
@@ -292,10 +297,11 @@ nav{
 
 .skill{
     padding: 6px 5;
-    height: fit-content;
+    height: auto;
     width: fit-content;
     background-color: #2a2a2a;
     margin-right: 7px;
+    margin-top: 5px;
     border-radius: 3px;
     font-size: 14px;
 }
@@ -308,11 +314,11 @@ nav{
     text-decoration: underline var(--color-secondary) solid;
     text-underline-offset: 30%;
     display: flex; 
-    padding: 50px 0;
+    padding: 30px 0;
     color: whitesmoke;
  
     font-size: 20;
-    margin-top: 30px;
+    margin-top: 20px;
 }
  
  
@@ -379,7 +385,8 @@ nav{
 }
  
 
-.project-links{ 
+.project-links-wrapper{ 
+    height: 100%;
 }
 
 .github, .website{
@@ -409,9 +416,20 @@ nav{
     background-color: var(--color-primary);
 }
 
+
+.experience-container{
+    margin-top: 40px
+}
 @media(max-width: 770px){
     .experience-container{
     flex-direction: column;
+    }
+
+    .organisation{
+        margin: 5px 0 0;
+    }
+    .position{
+        margin-bottom: 5px
     }
 }
 .work-info{ 
@@ -447,13 +465,7 @@ nav{
 @media (max-width: 600px) { 
     .heading{
         margin: 30px 0
-    } 
-    .blogposts{  
-        margin: 0 5px
-    }
-    .card-texts{
-        margin-top: -3px;
-    }
+    }  
 
     .card-description{
         display: none;
