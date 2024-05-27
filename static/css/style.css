@@ -87,8 +87,8 @@ nav{
 {   
     padding: 5px 15px;
     border: 1px solid var(--grey);
-    background: rgba(189, 183, 183, 0.3);
-    box-shadow: 0 40x 30px #212121, 0.3; 
+    background: rgba(189, 183, 183, 0.2);
+    box-shadow: 0 40x 30px #212121, 0.5; 
     backdrop-filter: blur(10px);
     transition: .3s;
     border-radius: 70px;
@@ -299,10 +299,13 @@ nav{
     padding: 6px 5;
     height: auto;
     width: fit-content;
-    background-color: #2a2a2a;
+    background: #d0a0031d;
+    box-shadow: 0 40x 30px #212121, 0.3; 
     margin-right: 7px;
     margin-top: 5px;
     border-radius: 3px;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
     font-size: 14px;
 }
 .skills{
@@ -454,10 +457,10 @@ nav{
     }
 
     .organisation{
-        margin: 5px 0 0;
+        margin: 10px 0 0;
     }
     .position{
-        margin-bottom: 5px
+        margin-bottom: 10px
     }
 }
 .work-info{ 
