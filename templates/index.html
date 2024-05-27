@@ -44,7 +44,7 @@
             <div class="aftertext container"> 
                 <span class="text-gradient">A Digital Sorcerer</span>
             </div>
-            <p class="description">Passionate about developing effecient and robust technologies.</p>
+            <p class="description">Dedicated to developing effecient and robust technologies.</p>
         </div> 
  
         </div>
@@ -96,29 +96,24 @@
     <section class="experience" id="experience">
         <div class="heading container">Experience</div>
         
-        <div class="experience-container d-flex container">
-            <div class="timeline">May 2024 - Present</div>
-            <div class="work-info d-flex flex-column">
-                <p class="organisation">Datium Tech</p>
-                <p class="position">Backend Developer</p>
+        
+        {% for e in experience %}
+            <div class="experience-container d-flex container">
+                <div class="timeline"> 
+                    {{e.start_date|date:"N Y"}} - {%if e.end_date is None %} Present {% else %} {{e.end_date|date:"N Y"}}
+                {% endif %}
+                </div>
+                <div class="work-info d-flex flex-column">
+                    <p class="organisation">{{e.organization}}</p>
+                    <p class="position">{{e.job_title}}</p>
 
-                <p class="job-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatibus sapiente nobis et accusamus, quisquam cum maxime illo? Dolorem, perspiciatis ipsum saepe sequi incidunt exercitationem maiores quasi architecto sapiente voluptas.</p>
-                
-                <div class="skill">Python</div>
+                    <p class="job-des">{{e.description}}</p>
+                    
+                    <div class="job-skill mt-3">{{e.tech1}}</div>
+                </div>
             </div>
-        </div>
-
-        <div class="experience-container d-flex container">
-            <div class="timeline">Mar 2023 - Jun, 2024</div>
-            <div class="work-info d-flex flex-column">
-                <p class="organisation">Pistis TechHub</p>
-                <p class="position">Backend Developer</p>
-
-                <p class="job-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatibus sapiente nobis et accusamus, quisquam cum maxime illo? Dolorem, perspiciatis ipsum saepe sequi incidunt exercitationem maiores quasi architecto sapiente voluptas.</p>
-                
-                <div class="skill">Python</div>
-            </div>
-        </div>
+        {% endfor %}
+        
 
     </section>
 
@@ -164,9 +159,9 @@
   <!--PROJECT SECTION ENDS -->
         
 
+          <!--
 
       <section class="contacts" id="contact">
-          <!--
         <h1 class="heading">Contact and Links</h1>
         <div class="contact-container">
 
@@ -189,8 +184,9 @@
                 <button type="submit"><strong>Submit</strong></button>
             </form>
 
-      -->
       </section>
+      -->
+
       <section class="footer">
         <div class="lisense container d-flex justify-content-between">
                 <span>© 2024 Shura IO</span>

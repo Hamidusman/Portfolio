@@ -463,12 +463,9 @@ nav{
         margin-bottom: 10px
     }
 }
-.work-info{ 
-
-}
 
 .timeline{
-    width: 380px;
+    min-width: 190px
     
 }
 .organisation, .position{
