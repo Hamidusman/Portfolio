@@ -465,8 +465,14 @@ nav{
 }
 
 .timeline{
-    min-width: 190px
+    min-width: 190px;
+    color: var(--color-secondary);
+
     
+}
+
+.job-skill{
+    color: var(--color-secondary)
 }
 .organisation, .position{
     color: whitesmoke
