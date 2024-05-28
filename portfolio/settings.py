@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+    'default': dj_database_url.parse('postgres://test_8gpo_user:JHBO1jQxun6yDNTQdL8lscg1ECncGv2b@dpg-cpaj5h63e1ms739qmf7g-a.oregon-postgres.render.com/test_8gpo')
 }
 
 
