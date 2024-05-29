@@ -300,6 +300,10 @@ nav{
 /* END OF ABOUT */
 
 /* SKILLS */
+
+.skill-img{
+    width: 20px
+}
 .skill{
     padding: 6px 5;
     height: auto;
