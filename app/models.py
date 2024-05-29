@@ -32,5 +32,5 @@ class Experience(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=60)
     tech = models.CharField(max_length=100)
-    github_link = models.URLField(max_length=150)
-    website_link = models.URLField(max_length=150)
+    github_link = models.URLField(max_length=150, blank=True, null=True)
+    website_link = models.URLField(max_length=150, blank=True, null=True)
