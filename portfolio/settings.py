@@ -132,9 +132,9 @@ STATIC_ROOT = BASE_DIR / 'productionfiles'
 STATIC_URL = 'static/'
 
 # Define STATICFILES_DIRS for original locations of static files (if any)
-STATICFILES_DIRS = [
+'''STATICFILES_DIRS = [
     BASE_DIR / 'static',
-]
+]'''
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = "/media/"
