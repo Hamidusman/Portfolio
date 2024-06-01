@@ -8,6 +8,12 @@ class TechStack(models.Model):
     def __str__(self):
         return (self.title)
 
+class Service(models.Model): 
+    service = models.CharField(max_length=70)
+
+    def __str__(self):
+        return (self.service)
+
 class Experience(models.Model):
     job_title = models.CharField(max_length=50)
     organization = models.CharField(max_length=100)

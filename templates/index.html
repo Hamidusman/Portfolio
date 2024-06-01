@@ -42,7 +42,7 @@
                 Hello, I'm Hamid.
             </div>     
             <div class="aftertext container text-gradient">
-                A Backend Developer
+                A FullStack Developer
             </div>
             <p class="description">Dedicated to developing effecient and robust technologies.</p>
         </div> 
@@ -90,35 +90,6 @@
         </div>
     </section>
 
-    
-    <!-- Work experience-->
-    <section class="experience" id="experience">
-        <div class="heading container">Experience</div>
-        
-        
-        {% for e in experience %}
-            <div class="experience-container d-flex container">
-                <div class="timeline"> 
-                    {{e.start_date|date:"N Y"}} - {%if e.end_date is None %} Present {% else %} {{e.end_date|date:"N Y"}}
-                {% endif %}
-                </div>
-                <div class="work-info d-flex flex-column">
-                    <p class="organisation">{{e.organization}}</p>
-                    <p class="position">{{e.job_title}}</p>
-
-                    <p class="job-des">{{e.description}}</p>
-                    
-                    <div class="job-skill mt-3">{{e.tech1}}</div>
-                </div>
-            </div>
-        {% endfor %}
-        
-
-
-    </section>
-
-    
-    
     <section class="projects" id="projects">
         <h1 class="heading container">Projects</h1>
 
@@ -162,6 +133,35 @@
         </div>
     </section>
 
+    
+    <!-- Work experience-->
+    <section class="experience" id="experience">
+        <div class="heading container">Experience</div>
+        
+        
+        {% for e in experience %}
+            <div class="experience-container d-flex container">
+                <div class="timeline"> 
+                    {{e.start_date|date:"N Y"}} - {%if e.end_date is None %} Present {% else %} {{e.end_date|date:"N Y"}}
+                {% endif %}
+                </div>
+                <div class="work-info d-flex flex-column">
+                    <p class="organisation">{{e.organization}}</p>
+                    <p class="position">{{e.job_title}}</p>
+
+                    <p class="job-des">{{e.description}}</p>
+                    
+                    <div class="job-skill mt-3">{{e.tech1}}</div>
+                </div>
+            </div>
+        {% endfor %}
+        
+
+
+    </section>
+
+    
+    
   <!--PROJECT SECTION -->
   <!--PROJECT SECTION ENDS -->
         
