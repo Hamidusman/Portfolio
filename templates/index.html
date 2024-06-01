@@ -84,7 +84,8 @@
 
  
         <div class="skill-cards container"> 
-              <div class="skill">{{ s.service }}</div>   
+            {% for s in service %}
+              <div class="skill">{{ s.service }}</div>
             {% endfor %}
         </div>
     </section>
@@ -233,21 +234,6 @@
 
 </body>
 
-<script type="text/javascript">
-   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        } else {
-          entry.target.classList.remove('show'); 
-        }
-      });
-    });
-  
-  const skill = document.querySelectorAll('.skill');
-  skill.forEach((ele) => observer.observe(ele));
-</script>
 
 </html>
 
