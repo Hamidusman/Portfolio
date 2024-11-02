@@ -13,16 +13,15 @@
 
 <body>
 
-  
-  
     <nav> 
             <div class="navs">
                 
 
                     <a href="#home">Home</a>
                     <a href="#story">About</a>
-                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a> 
+                    <a href="#experience">Experience</a>
                         
             </div> 
         </nav>
@@ -42,11 +41,11 @@
                 Hello, I'm Hamid.
             </div>     
             <div class="aftertext container text-gradient">
-                A backend Developer
+                A Full Stack Developer
             </div>
-            <p class="description">Dedicated to developing effecient and robust technologies.</p>
+            <p class="description">Specialized In Developing Scalable and Robust Backend Applications</p>
         </div> 
- 
+
         </div>
     </section>
 
@@ -58,12 +57,12 @@
         <h1 class="heading container">About</h1>
 
         <div class="story-container container">
-<!--
+
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <img id="dokeibi" class="dokeibi" src="{% static 'images/dokeibi.png' %}" alt=""> 
             </div>
-        -->
-   
+        
+
 
             <div class="about-text">
                     <p>Greetings! I am Hamid, a developer with 3 years of experience, specializing prominently in backend development.
@@ -79,19 +78,17 @@
     
     
     <section class="skills" id="skills">
-        <h1 class="heading container">Services</h1>
+        <h1 class="heading container">Skills</h1>
 
 
- 
+
         <div class="skill-cards container"> 
             {% for s in service %}
-              <div class="skill">{{ s.service }}</div>
+            <div class="skill">{{ s.service }}</div>
             {% endfor %}
         </div>
-    </section>
-    
-    <section class="skills" id="skills">
-        <h1 class="heading container">Skillset</h1>
+
+        <h1 class="heading container">Technologies</h1>
 
 
  
