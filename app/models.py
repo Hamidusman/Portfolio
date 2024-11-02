@@ -21,6 +21,9 @@ class Experience(models.Model):
     end_date = models.DateField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     tech1 = models.CharField(max_length=40)
+    
+    def __str__(self):
+        return self.job_title
 
 
     def get_end_date_display(self):
@@ -40,3 +43,6 @@ class Project(models.Model):
     tech = models.CharField(max_length=100)
     github_link = models.URLField(max_length=150, blank=True, null=True)
     website_link = models.URLField(max_length=150, blank=True, null=True)
+    
+    def __str__(self):
+        return self.title
